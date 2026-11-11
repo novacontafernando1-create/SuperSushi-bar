@@ -1,0 +1,6 @@
+{
+  "name": "Supershushi Bar",
+  "description": "High-gastronomy futuristic omakase and izakaya dining merging Japanese culinary precision with cosmic kinetic energy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

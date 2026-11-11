@@ -1,0 +1,219 @@
+---
+name: Supershushi Bar
+colors:
+  surface: '#11131a'
+  surface-dim: '#11131a'
+  surface-bright: '#373941'
+  surface-container-lowest: '#0c0e15'
+  surface-container-low: '#191b23'
+  surface-container: '#1d1f27'
+  surface-container-high: '#282a31'
+  surface-container-highest: '#33343d'
+  on-surface: '#e2e2ec'
+  on-surface-variant: '#e0c0b1'
+  inverse-surface: '#e2e2ec'
+  inverse-on-surface: '#2e3038'
+  outline: '#a78b7d'
+  outline-variant: '#584236'
+  surface-tint: '#ffb68e'
+  primary: '#ffb68e'
+  on-primary: '#542200'
+  primary-container: '#ff7a1a'
+  on-primary-container: '#5e2700'
+  inverse-primary: '#9c4500'
+  secondary: '#afc6ff'
+  on-secondary: '#002d6c'
+  secondary-container: '#528dff'
+  on-secondary-container: '#00275f'
+  tertiary: '#d0bcff'
+  on-tertiary: '#3b0092'
+  tertiary-container: '#ad8dff'
+  on-tertiary-container: '#4300a3'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#ffdbca'
+  primary-fixed-dim: '#ffb68e'
+  on-primary-fixed: '#331200'
+  on-primary-fixed-variant: '#773300'
+  secondary-fixed: '#d9e2ff'
+  secondary-fixed-dim: '#afc6ff'
+  on-secondary-fixed: '#001a43'
+  on-secondary-fixed-variant: '#004398'
+  tertiary-fixed: '#e9ddff'
+  tertiary-fixed-dim: '#d0bcff'
+  on-tertiary-fixed: '#23005c'
+  on-tertiary-fixed-variant: '#5500cb'
+  background: '#11131a'
+  on-background: '#e2e2ec'
+  surface-variant: '#33343d'
+typography:
+  display-hero:
+    fontFamily: Syne
+    fontSize: 56px
+    fontWeight: '800'
+    lineHeight: 64px
+    letterSpacing: -0.03em
+  display-hero-mobile:
+    fontFamily: Syne
+    fontSize: 36px
+    fontWeight: '800'
+    lineHeight: 44px
+    letterSpacing: -0.02em
+  headline-lg:
+    fontFamily: Syne
+    fontSize: 40px
+    fontWeight: '700'
+    lineHeight: 48px
+    letterSpacing: -0.02em
+  headline-lg-mobile:
+    fontFamily: Syne
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 36px
+    letterSpacing: -0.01em
+  headline-md:
+    fontFamily: Syne
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 36px
+    letterSpacing: -0.01em
+  headline-sm:
+    fontFamily: Space Grotesk
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 28px
+    letterSpacing: 0.02em
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '400'
+    lineHeight: 28px
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 15px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 20px
+  label-caps:
+    fontFamily: Space Grotesk
+    fontSize: 11px
+    fontWeight: '700'
+    lineHeight: 14px
+    letterSpacing: 0.14em
+  label-md:
+    fontFamily: Space Grotesk
+    fontSize: 14px
+    fontWeight: '500'
+    lineHeight: 18px
+    letterSpacing: 0.03em
+  mono-price:
+    fontFamily: Space Grotesk
+    fontSize: 16px
+    fontWeight: '700'
+    lineHeight: 20px
+    letterSpacing: -0.01em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  gutter-sm: 1rem
+  gutter-lg: 2.5rem
+  margin: 1.5rem
+  margin-md: 2.5rem
+  margin-lg: 4rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+
+This design system establishes a high-gastronomy, futuristic dining identity that merges Japanese omakase precision with cosmic kinetic energy. The aesthetic channels a sophisticated interpretation of ascending power, celestial aura, and modern izakaya culture—deliberately elevated to avoid novelty, nostalgia, or cartoonish tropes.
+
+The visual direction centers on **Cosmic Cyberpunk-Luxe**:
+- **Atmospheric Depth:** Deep-space dark fields set an intimate, luxury nightlife ambiance, punctured by controlled kinetic energy blooms (ki gradients and hyper-focused light strokes).
+- **Culinary Precision:** Monolithic card structures, sharp typographic hierarchies, and obsidian surfaces emulate premium slate serving plates and custom forged santoku knives.
+- **Controlled Radiance:** Glows, borders, and ambient light sources are restrained—acting as structural focal anchors, directional accents, and status signatures rather than decorative clutter.
+
+## Colors
+
+The color system delivers high dynamic range on OLED screens while strictly regulating luminance to preserve an upscale culinary atmosphere.
+
+- **Primary (`#FF7A1A` - Energy Orange):** Represents concentrated Dragon Ki, sear-torch heat, and prime uni/salmon roe. Reserved strictly for conversion paths, active states, key interactive indicators, and checkout triggers.
+- **Secondary (`#1677FF` - Electric Blue):** Embodies charged atmospheric flow and technical sophistication. Deployed for operational states, reservation confirmations, beverage selections, and technical interface metadata.
+- **Tertiary (`#762DFF` - Cosmic Purple):** Signifies rare omakase reserves, chef seasonal transformations, and transcendent VIP tiers. Used selectively in conjunction with radial gradients and elevated status surfaces.
+- **Neutral Canvas (`#090B12` - Deep Space Black):** The primary void. All viewports terminate here to frame ingredients like luminous celestial artifacts.
+- **Surfaces (`#191D28` - Graphite Gray):** Elevated container planes. Rendered with subtle alpha-based borders (`rgba(255, 122, 26, 0.15)` or `rgba(22, 119, 255, 0.2)`) rather than solid outlines.
+- **Typography Tint (`#F4F5F8` - Ice White):** Primary text color, engineered to prevent bloom against pure dark surfaces while delivering uncompromising legibility.
+
+## Typography
+
+The typographic hierarchy establishes clear structural tension between wide geometric headlines, technical data anchors, and frictionless humanized body text:
+
+- **Syne (Headlines & Title Elements):** Exudes modern avant-garde sculpture. The heavy weight creates distinct character without resorting to literal sci-fi clichés.
+- **Space Grotesk (Navigation, Pricing, Meta-Tags & Subtitles):** Houses technical culinary specs (e.g., aging durations, thermal notes, cuts, price markers). It brings precision, structural cadence, and tactical confidence.
+- **Plus Jakarta Sans (Body Content):** Provides unencumbered clarity for dish descriptions, ingredient sourcing narratives, and booking flows.
+
+## Layout & Spacing
+
+The structural layout utilizes an asymmetric 12-column grid on desktop and tablet, collapsing into a single-column stacked view on mobile.
+
+- **Asymmetry & Focal Pacing:** Showcase items and hero dishes break bilateral symmetry by spanning irregular column intervals (e.g., 7 columns for imagery paired with 5 columns for typography and sensory profiles).
+- **Responsive Layout:**
+  - **Desktop (1024px+):** 12-column grid, `gutter-lg` (2.5rem), `margin-lg` (4rem). Maximum content envelope capped at 1360px.
+  - **Tablet (768px - 1023px):** 8-column grid, `gutter` (1.5rem), `margin-md` (2.5rem).
+  - **Mobile (320px - 767px):** 4-column layout, `gutter-sm` (1rem), `margin` (1.5rem). Quick-action bars and omakase course configurators lock flush to the bottom viewport.
+
+## Elevation & Depth
+
+Spatial layering relies on translucent obsidian slabs, linear refraction highlights, and tinted energy hazes rather than traditional neutral drop shadows.
+
+- **Level 1 (Base Plates & Canvas):** Pitch background `#090B12` accented by stationary, deep ambient radial blooms (`rgba(118, 45, 255, 0.08)` and `rgba(22, 119, 255, 0.06)`).
+- **Level 2 (Cards & Modules):** Solid `#191D28` or translucent `#191D28E6` with a `16px` backdrop-filter blur. Edges are framed with a hairline `1px` border containing a directional gradient (`rgba(244, 245, 248, 0.1)` on the light incidence side fading down to `rgba(255, 122, 26, 0.05)`).
+- **Level 3 (Interactive Flyouts & Overlays):** `#1E2332` with an ambient glow of `0 12px 36px -8px rgba(0, 0, 0, 0.7)` combined with a soft, directional secondary glow `0 0 20px rgba(22, 119, 255, 0.15)`.
+- **Level 4 (Ki Flare / Active State):** Concentrated focal illumination applied to key call-to-actions, containing a double ring: an inner crisp stroke of `rgba(255, 122, 26, 0.4)` and a diffuse outer projection `0 0 24px rgba(255, 122, 26, 0.35)`.
+
+## Shapes
+
+The design system incorporates geometric curves tempered by structural rectangular architecture.
+
+- Base interactive containers, menu modules, and image plates utilize `0.5rem` (`roundedness: 2`) to echo precision-cut sashimi blocks.
+- Modal dialogues, floating sheet draws, and elevated experience carousels scale to `rounded-lg` (`1rem`).
+- Metadata markers, dietary pills, and interactive status orbs employ fully circular `9999px` radii to contrast with linear grid edges, representing concentrated spheres of ki.
+
+## Components
+
+### Buttons
+- **Primary Energy Trigger:** Base background `#FF7A1A` with text `#090B12` in `Space Grotesk` Bold uppercase. Active state projects an exterior aura glow (`0 0 24px rgba(255, 122, 26, 0.45)`). Inner padding uses `0.75rem 1.75rem`.
+- **Ghost Tactical (Secondary):** Transparent core framed by a `1px` stroke of `rgba(22, 119, 255, 0.4)`. Text in `#F4F5F8`. On hover, the background morphs to `rgba(22, 119, 255, 0.12)` accompanied by an electric aura glow.
+- **Floating WhatsApp Concierge:** Fixed position bottom-right anchor. `#090B12` circular chassis bounded by an animated dual-gradient border (`#1677FF` to `#FF7A1A`). Inner icon rendered in high-contrast Ice White, backed by a persistent pulse halo (`rgba(22, 119, 255, 0.3)`).
+
+### Chips & Energy Orb Badges
+- **Status Chips:** Pill-shaped (`rounded-full`), framed in `rgba(244, 245, 248, 0.12)`, dark graphite filling, housing a `label-caps` typographical format.
+- **Orb Badges (Spice/Transformation Level):** A circular `8px` luminescent bead (`#FF7A1A` or `#762DFF`) positioned directly preceding the label, emitting an ambient glow `0 0 8px currentColor`.
+
+### Cards & Menu Showcases
+- Surface `#191D28` with subtle backdrop refraction. Food imagery features a micro-gradient mask fading from transparent to black at the base to ensure label readability.
+- **Hover Micro-Interaction:** Upon interaction, card borders shift from muted graphite to an electric blue or ki-orange gradient trace, with the culinary artifact scaling 2% inward.
+
+### Lists & Specifications
+- Asymmetrical list layouts with thin divider rules (`1px` solid `rgba(244, 245, 248, 0.06)`). 
+- Left column anchors the course sequence number in `Space Grotesk` muted secondary; right column aligns dish name, culinary process markers, and prices in `mono-price` formatting.
+
+### Input Fields & Controls
+- Form controls rest in `#12151E` with an inset boundary of `1px` solid `rgba(244, 245, 248, 0.1)`. 
+- Focused inputs replace default browser chrome with an active energy outline in `#1677FF` and an ambient diffuse glow of `0 0 12px rgba(22, 119, 255, 0.25)`.
+- Radios and Checkboxes: Geometric squares and circles utilizing pure `#FF7A1A` fills upon selection, accompanied by centered micro-pips.

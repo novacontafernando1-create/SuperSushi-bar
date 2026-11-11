@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ffb68e;
+  --color-primary-fixed: #ffdbca;
+  --color-primary-fixed-dim: #ffb68e;
+  --color-primary-container: #ff7a1a;
+  --color-on-primary: #542200;
+  --color-on-primary-container: #5e2700;
+  --color-on-primary-fixed: #331200;
+
+  --color-secondary: #afc6ff;
+  --color-secondary-fixed: #d9e2ff;
+  --color-secondary-fixed-dim: #afc6ff;
+  --color-secondary-container: #528dff;
+  --color-on-secondary: #002d6c;
+  --color-on-secondary-container: #00275f;
+
+  --color-tertiary: #d0bcff;
+  --color-tertiary-fixed: #e9ddff;
+  --color-tertiary-fixed-dim: #d0bcff;
+  --color-tertiary-container: #ad8dff;
+  --color-on-tertiary: #3b0092;
+  --color-on-tertiary-container: #4300a3;
+
+  --color-background: #11131a;
+  --color-surface: #11131a;
+  --color-surface-dim: #11131a;
+  --color-surface-bright: #373941;
+  --color-surface-variant: #33343d;
+  --color-surface-container-lowest: #0c0e15;
+  --color-surface-container-low: #191b23;
+  --color-surface-container: #1d1f27;
+  --color-surface-container-high: #282a31;
+  --color-surface-container-highest: #33343d;
+
+  --color-on-surface: #e2e2ec;
+  --color-on-surface-variant: #e0c0b1;
+  --color-outline: #a78b7d;
+  --color-outline-variant: #584236;
+
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2.5rem;
+  --spacing-margin: 1.5rem;
+  --spacing-margin-md: 2.5rem;
+  --spacing-margin-lg: 4rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-gutter-lg: 2.5rem;
+
+  --font-display-hero: 'Syne', sans-serif;
+  --font-headline-lg: 'Syne', sans-serif;
+  --font-headline-md: 'Syne', sans-serif;
+  --font-headline-sm: 'Space Grotesk', sans-serif;
+  --font-mono-price: 'Space Grotesk', monospace, sans-serif;
+  --font-label-md: 'Space Grotesk', sans-serif;
+  --font-label-caps: 'Space Grotesk', sans-serif;
+  --font-body-lg: 'Plus Jakarta Sans', sans-serif;
+  --font-body-md: 'Plus Jakarta Sans', sans-serif;
+  --font-body-sm: 'Plus Jakarta Sans', sans-serif;
+
+  --text-display-hero: 56px;
+  --text-headline-lg: 40px;
+  --text-headline-md: 28px;
+  --text-headline-sm: 20px;
+  --text-body-lg: 18px;
+  --text-body-md: 15px;
+  --text-body-sm: 13px;
+  --text-label-md: 14px;
+  --text-label-caps: 11px;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #11131a;
+    color: #e2e2ec;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    overscroll-behavior: none;
+  }
+
+  /* Material Symbols icon utility */
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Ki animations */
+@keyframes pulse-ki {
+  0%, 100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+}
+
+.animate-pulse-ki {
+  animation: pulse-ki 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.glow-ki-sm {
+  box-shadow: 0 0 16px rgba(255, 122, 26, 0.4);
+}

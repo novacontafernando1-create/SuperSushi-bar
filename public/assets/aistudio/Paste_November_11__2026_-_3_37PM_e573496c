@@ -1,0 +1,2489 @@
+<!-- Gerenciamento de Categorias - Supershushi Bar -->
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#0c0e15", "on-tertiary-container": "#4300a3", "on-primary-fixed": "#331200", "on-tertiary": "#3b0092", "error-container": "#93000a", "on-surface": "#e2e2ec", "on-surface-variant": "#e0c0b1", "secondary-fixed-dim": "#afc6ff", "on-error-container": "#ffdad6", "secondary-container": "#528dff", "primary-fixed": "#ffdbca", "on-primary-container": "#5e2700", "on-tertiary-fixed": "#23005c", "outline": "#a78b7d", "on-primary-fixed-variant": "#773300", "on-secondary-fixed": "#001a43", "primary-container": "#ff7a1a", "on-error": "#690005", "on-background": "#e2e2ec", "surface-container-high": "#282a31", "error": "#ffb4ab", "primary": "#ffb68e", "on-secondary-fixed-variant": "#004398", "surface-container": "#1d1f27", "on-secondary": "#002d6c", "on-secondary-container": "#00275f", "surface-dim": "#11131a", "outline-variant": "#584236", "on-primary": "#542200", "tertiary-fixed-dim": "#d0bcff", "primary-fixed-dim": "#ffb68e", "surface": "#11131a", "secondary-fixed": "#d9e2ff", "tertiary": "#d0bcff", "background": "#11131a", "surface-variant": "#33343d", "tertiary-fixed": "#e9ddff", "inverse-surface": "#e2e2ec", "inverse-primary": "#9c4500", "surface-container-low": "#191b23", "surface-bright": "#373941", "surface-tint": "#ffb68e", "on-tertiary-fixed-variant": "#5500cb", "inverse-on-surface": "#2e3038", "secondary": "#afc6ff", "surface-container-highest": "#33343d", "tertiary-container": "#ad8dff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-lg": "2.5rem", "margin-md": "2.5rem", "margin-lg": "4rem", "space-md": "1rem", "gutter-sm": "1rem", "space-xs": "0.25rem", "margin": "1.5rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "gutter": "1.5rem" }, "fontFamily": { "body-lg": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Syne" ], "display-hero-mobile": [ "Syne" ], "headline-sm": [ "Space Grotesk" ], "mono-price": [ "Space Grotesk" ], "body-md": [ "Plus Jakarta Sans" ], "label-md": [ "Space Grotesk" ], "label-caps": [ "Space Grotesk" ], "display-hero": [ "Syne" ], "headline-md": [ "Syne" ], "headline-lg": [ "Syne" ] }, "fontSize": { "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "mono-price": [ "16px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "label-md": [ "14px", { "lineHeight": "18px", "letterSpacing": "0.03em", "fontWeight": "500" } ], "label-caps": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.14em", "fontWeight": "700" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between p-gutter"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs"><div class="w-9 h-9 rounded-xl bg-primary-container flex items-center justify-center shadow-[0_0_20px_rgba(255,122,26,0.35)]"><span class="material-symbols-outlined text-surface-container-lowest text-[22px]">ramen_dining</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface">SUPERSHUSHI</span><span class="font-label-caps text-label-caps text-primary tracking-widest">ADMIN CONSOLE</span></div></div><div class="h-px w-full bg-surface-container-high"></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-high text-primary shadow-[inset_3px_0_0_0_#ff7a1a] font-semibold"><a class="flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="catalogo-de-produtos" href="#"><span class="material-symbols-outlined text-[20px]">restaurant_menu</span><span class="font-label-md text-label-md">Catálogo de Produtos</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-3 rounded-lg transition-all bg-surface-container-high text-primary shadow-[inset_3px_0_0_0_#ff7a1a] font-semibold" data-path="categorias" href="#"><span class="material-symbols-outlined text-[20px]">category</span><span class="font-label-md text-label-md">Categorias</span></a><a class="flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="configuracoes" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-md text-label-md">Configurações</span></a></nav></div><div class="flex flex-col gap-space-md pt-space-md border-t border-surface-container-high"><div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low"><div class="flex items-center gap-space-sm"><div class="relative"><div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[20px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary-container ring-2 ring-surface-container-lowest"></span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Chef Hiroshi</span><span class="font-label-caps text-label-caps text-secondary leading-tight mt-0.5">Master Admin</span></div></div><a class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-error hover:bg-surface-container transition-colors" data-path="login" href="#" title="Sair"><span class="material-symbols-outlined text-[18px]">logout</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/80 backdrop-blur-xl z-40 px-gutter-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-lg"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]">search</span><input class="w-80 h-10 pl-10 pr-space-md rounded-lg bg-surface-container text-on-surface placeholder:text-on-surface-variant/60 font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary transition-all" placeholder="Pesquisar pedidos, sushis ou insumos..." type="text"/></div></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs px-space-md h-10 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[18px] text-secondary">visibility</span><span>Ver Site Público</span></a><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 px-gutter-lg pb-margin-lg bg-surface"><div class="flex flex-col w-full">
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const activeLink = document.querySelector('aside nav a[data-path="categorias"]');
+      if (activeLink) {
+        document.querySelectorAll('aside nav a').forEach(el => {
+          el.className = "flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all";
+        });
+        activeLink.className = "flex items-center gap-space-md px-space-md py-3 rounded-lg bg-surface-container-high text-primary shadow-[inset_3px_0_0_0_#ff7a1a] font-semibold";
+      }
+    });
+  </script>
+<!-- Ambient Ki Flare Background Accents -->
+<div class="relative w-full">
+<div class="pointer-events-none absolute -top-10 right-1/4 w-96 h-96 rounded-full bg-primary-container/10 blur-[120px] -z-10"></div>
+<div class="pointer-events-none absolute top-48 left-12 w-80 h-80 rounded-full bg-secondary-container/10 blur-[100px] -z-10"></div>
+<!-- Header Section -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-xl">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#ff7a1a]"></span>
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Arquitetura de Cardápio Omakase</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight">Categorias do Cardápio</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Estruture as seções e agrupamentos do menu público. Reordene para definir a sequência de exibição na página pública com sincronização cinética em tempo real.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="hidden sm:flex items-center gap-space-xs px-space-md py-2.5 rounded-xl bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">tune</span>
+<span>7 Seções Ativas</span>
+</div>
+<button class="flex items-center gap-space-xs px-space-lg py-3 rounded-xl bg-primary-container text-surface-container-lowest font-headline-sm text-headline-sm uppercase tracking-wider hover:brightness-110 active:scale-95 transition-all shadow-[0_0_24px_rgba(255,122,26,0.38)]" onclick="document.getElementById('input-nome').focus()">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Nova Categoria</span>
+</button>
+</div>
+</div>
+<!-- Main Workspace Split Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter-lg items-start">
+<!-- Left Column: Categories List & Reordering (7 Columns) -->
+<div class="xl:col-span-7 flex flex-col gap-space-md">
+<!-- Table Action Bar / Status -->
+<div class="flex items-center justify-between px-space-md py-space-sm bg-surface-container-low rounded-xl">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Sequência do Menu Público</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-caps text-label-caps">Arrastar p/ reordenar</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">sync</span>
+<span>Auto-save ativo</span>
+</div>
+</div>
+<!-- Draggable Category Cards Container -->
+<div class="flex flex-col gap-space-sm" id="categories-container">
+<!-- Category Item 1 -->
+<div class="group relative flex flex-col sm:flex-row sm:items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all shadow-md hover:shadow-xl">
+<div class="flex items-center gap-space-md min-w-0">
+<button class="cursor-grab active:cursor-grabbing text-on-surface-variant/40 group-hover:text-primary transition-colors p-1" title="Arrastar para reordenar">
+<span class="material-symbols-outlined text-[22px]">drag_indicator</span>
+</button>
+<div class="w-11 h-11 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shadow-inner">
+<span class="material-symbols-outlined text-[24px]">set_meal</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Sushis &amp; Nigiris</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container shadow-[0_0_6px_#ff7a1a]"></span>
+</div>
+<div class="flex items-center gap-space-sm mt-0.5">
+<span class="font-label-caps text-label-caps text-secondary font-mono">/cardapio#sushis</span>
+<span class="text-on-surface-variant/40">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">14 pratos catalogados</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-space-md mt-space-sm sm:mt-0 pt-space-xs sm:pt-0">
+<div class="flex items-center gap-2">
+<span class="font-mono-price text-mono-price text-on-surface-variant bg-surface-container-lowest px-2.5 py-1 rounded">#01</span>
+<span class="px-2.5 py-1 rounded-full bg-primary-container/15 text-primary font-label-caps text-label-caps">Ativa</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors" title="Editar Seção">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-error hover:bg-surface-container-lowest transition-colors" onclick="openSafeguardModal('Sushis &amp; Nigiris', 14)" title="Excluir Categoria">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Category Item 2 -->
+<div class="group relative flex flex-col sm:flex-row sm:items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all shadow-md hover:shadow-xl">
+<div class="flex items-center gap-space-md min-w-0">
+<button class="cursor-grab active:cursor-grabbing text-on-surface-variant/40 group-hover:text-primary transition-colors p-1" title="Arrastar para reordenar">
+<span class="material-symbols-outlined text-[22px]">drag_indicator</span>
+</button>
+<div class="w-11 h-11 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary shadow-inner">
+<span class="material-symbols-outlined text-[24px]">water_drop</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Sashimis Nobres</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shadow-[0_0_6px_#afc6ff]"></span>
+</div>
+<div class="flex items-center gap-space-sm mt-0.5">
+<span class="font-label-caps text-label-caps text-secondary font-mono">/cardapio#sashimis</span>
+<span class="text-on-surface-variant/40">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">9 cortes premium</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-space-md mt-space-sm sm:mt-0 pt-space-xs sm:pt-0">
+<div class="flex items-center gap-2">
+<span class="font-mono-price text-mono-price text-on-surface-variant bg-surface-container-lowest px-2.5 py-1 rounded">#02</span>
+<span class="px-2.5 py-1 rounded-full bg-primary-container/15 text-primary font-label-caps text-label-caps">Ativa</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors" title="Editar Seção">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-error hover:bg-surface-container-lowest transition-colors" onclick="openSafeguardModal('Sashimis Nobres', 9)" title="Excluir Categoria">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Category Item 3 -->
+<div class="group relative flex flex-col sm:flex-row sm:items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all shadow-md hover:shadow-xl">
+<div class="flex items-center gap-space-md min-w-0">
+<button class="cursor-grab active:cursor-grabbing text-on-surface-variant/40 group-hover:text-primary transition-colors p-1" title="Arrastar para reordenar">
+<span class="material-symbols-outlined text-[22px]">drag_indicator</span>
+</button>
+<div class="w-11 h-11 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shadow-inner">
+<span class="material-symbols-outlined text-[24px]">local_fire_department</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Combos do Dragão</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container shadow-[0_0_6px_#ff7a1a]"></span>
+</div>
+<div class="flex items-center gap-space-sm mt-0.5">
+<span class="font-label-caps text-label-caps text-secondary font-mono">/cardapio#combos-dragao</span>
+<span class="text-on-surface-variant/40">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">6 experiências</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-space-md mt-space-sm sm:mt-0 pt-space-xs sm:pt-0">
+<div class="flex items-center gap-2">
+<span class="font-mono-price text-mono-price text-on-surface-variant bg-surface-container-lowest px-2.5 py-1 rounded">#03</span>
+<span class="px-2.5 py-1 rounded-full bg-primary-container/15 text-primary font-label-caps text-label-caps">Ativa</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors" title="Editar Seção">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-error hover:bg-surface-container-lowest transition-colors" onclick="openSafeguardModal('Combos do Dragão', 6)" title="Excluir Categoria">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Category Item 4 -->
+<div class="group relative flex flex-col sm:flex-row sm:items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all shadow-md hover:shadow-xl">
+<div class="flex items-center gap-space-md min-w-0">
+<button class="cursor-grab active:cursor-grabbing text-on-surface-variant/40 group-hover:text-primary transition-colors p-1" title="Arrastar para reordenar">
+<span class="material-symbols-outlined text-[22px]">drag_indicator</span>
+</button>
+<div class="w-11 h-11 rounded-lg bg-surface-container-lowest flex items-center justify-center text-tertiary shadow-inner">
+<span class="material-symbols-outlined text-[24px]">cyclone</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Temakis Artesanais</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_6px_#d0bcff]"></span>
+</div>
+<div class="flex items-center gap-space-sm mt-0.5">
+<span class="font-label-caps text-label-caps text-secondary font-mono">/cardapio#temakis</span>
+<span class="text-on-surface-variant/40">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">8 cones crocantes</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-space-md mt-space-sm sm:mt-0 pt-space-xs sm:pt-0">
+<div class="flex items-center gap-2">
+<span class="font-mono-price text-mono-price text-on-surface-variant bg-surface-container-lowest px-2.5 py-1 rounded">#04</span>
+<span class="px-2.5 py-1 rounded-full bg-primary-container/15 text-primary font-label-caps text-label-caps">Ativa</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors" title="Editar Seção">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-error hover:bg-surface-container-lowest transition-colors" onclick="openSafeguardModal('Temakis Artesanais', 8)" title="Excluir Categoria">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Category Item 5 -->
+<div class="group relative flex flex-col sm:flex-row sm:items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all shadow-md hover:shadow-xl">
+<div class="flex items-center gap-space-md min-w-0">
+<button class="cursor-grab active:cursor-grabbing text-on-surface-variant/40 group-hover:text-primary transition-colors p-1" title="Arrastar para reordenar">
+<span class="material-symbols-outlined text-[22px]">drag_indicator</span>
+</button>
+<div class="w-11 h-11 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shadow-inner">
+<span class="material-symbols-outlined text-[24px]">whatshot</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Hot Rolls Especiais</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_6px_#ffb68e]"></span>
+</div>
+<div class="flex items-center gap-space-sm mt-0.5">
+<span class="font-label-caps text-label-caps text-secondary font-mono">/cardapio#hot-rolls</span>
+<span class="text-on-surface-variant/40">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">11 seleções</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-space-md mt-space-sm sm:mt-0 pt-space-xs sm:pt-0">
+<div class="flex items-center gap-2">
+<span class="font-mono-price text-mono-price text-on-surface-variant bg-surface-container-lowest px-2.5 py-1 rounded">#05</span>
+<span class="px-2.5 py-1 rounded-full bg-primary-container/15 text-primary font-label-caps text-label-caps">Ativa</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors" title="Editar Seção">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-error hover:bg-surface-container-lowest transition-colors" onclick="openSafeguardModal('Hot Rolls Especiais', 11)" title="Excluir Categoria">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Category Item 6 -->
+<div class="group relative flex flex-col sm:flex-row sm:items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all shadow-md hover:shadow-xl">
+<div class="flex items-center gap-space-md min-w-0">
+<button class="cursor-grab active:cursor-grabbing text-on-surface-variant/40 group-hover:text-primary transition-colors p-1" title="Arrastar para reordenar">
+<span class="material-symbols-outlined text-[22px]">drag_indicator</span>
+</button>
+<div class="w-11 h-11 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary shadow-inner">
+<span class="material-symbols-outlined text-[24px]">stars</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Especiais da Casa</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container shadow-[0_0_6px_#528dff]"></span>
+</div>
+<div class="flex items-center gap-space-sm mt-0.5">
+<span class="font-label-caps text-label-caps text-secondary font-mono">/cardapio#especiais</span>
+<span class="text-on-surface-variant/40">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">5 criações autorais</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-space-md mt-space-sm sm:mt-0 pt-space-xs sm:pt-0">
+<div class="flex items-center gap-2">
+<span class="font-mono-price text-mono-price text-on-surface-variant bg-surface-container-lowest px-2.5 py-1 rounded">#06</span>
+<span class="px-2.5 py-1 rounded-full bg-primary-container/15 text-primary font-label-caps text-label-caps">Ativa</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors" title="Editar Seção">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-error hover:bg-surface-container-lowest transition-colors" onclick="openSafeguardModal('Especiais da Casa', 5)" title="Excluir Categoria">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Category Item 7 (Hidden example) -->
+<div class="group relative flex flex-col sm:flex-row sm:items-center justify-between p-space-md rounded-xl bg-surface-container/60 hover:bg-surface-container transition-all shadow-md">
+<div class="flex items-center gap-space-md min-w-0 opacity-80 group-hover:opacity-100 transition-opacity">
+<button class="cursor-grab active:cursor-grabbing text-on-surface-variant/40 group-hover:text-primary transition-colors p-1" title="Arrastar para reordenar">
+<span class="material-symbols-outlined text-[22px]">drag_indicator</span>
+</button>
+<div class="w-11 h-11 rounded-lg bg-surface-container-lowest flex items-center justify-center text-tertiary shadow-inner">
+<span class="material-symbols-outlined text-[24px]">icecream</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Sobremesas Cósmicas</span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-variant"></span>
+</div>
+<div class="flex items-center gap-space-sm mt-0.5">
+<span class="font-label-caps text-label-caps text-on-surface-variant font-mono">/cardapio#sobremesas</span>
+<span class="text-on-surface-variant/40">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">4 itens sazonais</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-space-md mt-space-sm sm:mt-0 pt-space-xs sm:pt-0">
+<div class="flex items-center gap-2">
+<span class="font-mono-price text-mono-price text-on-surface-variant bg-surface-container-lowest px-2.5 py-1 rounded">#07</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-caps text-label-caps">Oculta</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors" title="Editar Seção">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-error hover:bg-surface-container-lowest transition-colors" onclick="openSafeguardModal('Sobremesas Cósmicas', 4)" title="Excluir Categoria">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Metric Panel for Sections -->
+<div class="grid grid-cols-3 gap-space-sm mt-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant">TOTAL DE ITENS</span>
+<div class="flex items-baseline gap-space-xs mt-space-sm">
+<span class="font-headline-lg text-headline-lg text-primary">57</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">pratos</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant">SEÇÕES VISÍVEIS</span>
+<div class="flex items-baseline gap-space-xs mt-space-sm">
+<span class="font-headline-lg text-headline-lg text-secondary">06</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">no site</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant">TAXA DE CONVERSÃO</span>
+<div class="flex items-baseline gap-space-xs mt-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface">34%</span>
+<span class="font-body-sm text-body-sm text-primary">+4.2%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Quick Create / Edit Form (5 Columns) -->
+<div class="xl:col-span-5 flex flex-col gap-space-md sticky top-24">
+<div class="p-gutter rounded-xl bg-surface-container-low backdrop-blur-xl shadow-xl flex flex-col gap-space-md relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">Painel de Configuração</span>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight" id="form-title">Criar Categoria</h2>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">post_add</span>
+</div>
+</div>
+<form class="flex flex-col gap-space-md" id="category-form" onsubmit="event.preventDefault(); handleSaveCategory();">
+<!-- Category Name -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase" for="input-nome">Nome da Categoria</label>
+<div class="relative">
+<input class="w-full h-12 px-space-md rounded-lg bg-surface-container text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant/40 focus:outline-none focus:ring-1 focus:ring-secondary transition-all" id="input-nome" oninput="updateSlug(this.value)" placeholder="Ex: Uramakis Nobres" required="" type="text" value="Uramakis Nobres"/>
+<span class="absolute right-3 top-3 material-symbols-outlined text-primary text-[20px]">edit_note</span>
+</div>
+</div>
+<!-- Slug (Auto-generated) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase" for="input-slug">Slug do Cardápio (URL)</label>
+<span class="font-body-sm text-body-sm text-secondary">gerado dinamicamente</span>
+</div>
+<div class="flex items-center h-12 px-space-md rounded-lg bg-surface-container text-on-surface-variant font-mono-price text-mono-price">
+<span class="text-on-surface-variant/50 mr-1">/cardapio#</span>
+<input class="bg-transparent text-secondary focus:outline-none w-full" id="input-slug" readonly="" type="text" value="uramakis-nobres"/>
+</div>
+</div>
+<!-- Description for public menu -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase" for="input-desc">Descrição do Agrupamento</label>
+<textarea class="w-full p-space-md rounded-lg bg-surface-container text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant/40 focus:outline-none focus:ring-1 focus:ring-secondary transition-all resize-none" id="input-desc" placeholder="Breve texto sensorial descritivo para encantar o cliente durante a navegação..." rows="3">Rolos invertidos com arroz temperado com vinagre de maçã envelhecido e coberturas trufadas.</textarea>
+</div>
+<!-- Order Priority & Visual Icon -->
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase" for="input-ordem">Ordem de Prioridade</label>
+<div class="relative">
+<input class="w-full h-12 px-space-md rounded-lg bg-surface-container text-on-surface font-headline-sm text-headline-sm focus:outline-none focus:ring-1 focus:ring-secondary transition-all" id="input-ordem" max="99" min="1" type="number" value="8"/>
+<span class="absolute right-3 top-3 material-symbols-outlined text-on-surface-variant text-[20px]">unfold_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Ícone Temático</label>
+<div class="flex items-center gap-2 h-12 px-space-sm rounded-lg bg-surface-container text-on-surface">
+<div class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">dinner_dining</span>
+</div>
+<select class="bg-transparent text-on-surface font-body-md text-body-md focus:outline-none w-full cursor-pointer">
+<option class="bg-surface-container" value="dinner_dining">dinner_dining</option>
+<option class="bg-surface-container" value="set_meal">set_meal</option>
+<option class="bg-surface-container" value="water_drop">water_drop</option>
+<option class="bg-surface-container" value="local_fire_department">local_fire_department</option>
+<option class="bg-surface-container" value="stars">stars</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Toggles & Flags -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<label class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Navegação Rápida</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fixar aba na barra superior pública</span>
+</div>
+<input checked="" class="w-5 h-5 accent-primary-container cursor-pointer rounded" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Destaque de Lançamento</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Adiciona badge cósmico piscante</span>
+</div>
+<input class="w-5 h-5 accent-primary-container cursor-pointer rounded" type="checkbox"/>
+</label>
+</div>
+<!-- Submit Button -->
+<div class="flex items-center gap-space-sm pt-space-sm">
+<button class="flex-1 h-12 rounded-xl bg-primary-container text-surface-container-lowest font-headline-sm text-headline-sm uppercase tracking-wider flex items-center justify-center gap-space-xs hover:brightness-110 active:scale-95 transition-all shadow-[0_0_20px_rgba(255,122,26,0.3)]" type="submit">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span>Salvar Categoria</span>
+</button>
+<button class="h-12 px-space-md rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-colors" title="Limpar formulário" type="reset">
+                Limpar
+              </button>
+</div>
+</form>
+</div>
+<!-- Quick Tips Callout -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">lightbulb</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Dica de Experiência Gastronômica</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Posicione no topo categorias com maior margem (como Omakases e Sashimis Nobres) para aumentar o ticket médio por comensal em até 22%.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Safeguard Deletion Modal (Overlay) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-surface-container-lowest/80 backdrop-blur-md hidden opacity-0 transition-opacity duration-300" id="safeguard-modal">
+<div class="relative w-full max-w-lg p-gutter rounded-xl bg-surface-container-low shadow-[0_12px_36px_-8px_rgba(0,0,0,0.8),0_0_24px_rgba(255,122,26,0.2)] flex flex-col gap-space-md transform scale-95 transition-transform duration-300" id="safeguard-dialog">
+<!-- Warning Header -->
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">shield_with_heart</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-error tracking-widest uppercase">Protocolo de Salvaguarda Ativo</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="modal-target-title">Remover Categoria</h3>
+</div>
+</div>
+<!-- Warning Body -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<p class="font-body-md text-body-md text-on-surface">
+<strong class="text-primary font-semibold">Atenção Crítica:</strong> 
+          Esta categoria possui <span class="font-mono text-primary font-bold" id="modal-product-count">14</span> produtos ativos vinculados ao cardápio público.
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Para evitar que os sushis fiquem órfãos ou indisponíveis para os clientes, selecione uma categoria de destino antes de confirmar a exclusão.
+        </p>
+</div>
+<!-- Relocation Select Box -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase" for="migration-category">Migrar Produtos Automaticamente Para:</label>
+<div class="relative">
+<select class="w-full h-12 pl-space-md pr-10 rounded-lg bg-surface-container text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-secondary appearance-none cursor-pointer" id="migration-category">
+<option value="especiais">Especiais da Casa (5 itens)</option>
+<option value="combos">Combos do Dragão (6 itens)</option>
+<option value="sashimis">Sashimis Nobres (9 itens)</option>
+<option value="hot-rolls">Hot Rolls Especiais (11 itens)</option>
+<option value="desativar">Ocultar todos os 14 itens temporariamente</option>
+</select>
+<span class="absolute right-3 top-3.5 material-symbols-outlined text-on-surface-variant text-[20px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center justify-end gap-space-sm pt-space-sm">
+<button class="h-11 px-space-lg rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" onclick="closeSafeguardModal()">
+          Cancelar
+        </button>
+<button class="h-11 px-space-lg rounded-xl bg-error text-on-error font-headline-sm text-headline-sm uppercase tracking-wider flex items-center gap-space-xs hover:brightness-110 active:scale-95 transition-all shadow-[0_0_16px_rgba(255,180,171,0.25)]" onclick="confirmSafeguardAction()">
+<span class="material-symbols-outlined text-[18px]">rule_folder</span>
+<span>Migrar &amp; Excluir</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Toast Notification Feedback -->
+<div class="fixed bottom-8 right-8 z-50 flex items-center gap-space-sm px-space-lg py-space-md rounded-xl bg-surface-container-high text-on-surface shadow-2xl transition-all duration-300 opacity-0 translate-y-4 pointer-events-none" id="toast-feedback">
+<span class="material-symbols-outlined text-primary text-[22px]" id="toast-icon">check_circle</span>
+<span class="font-body-md text-body-md" id="toast-message">Operação executada com sucesso.</span>
+</div>
+<script>
+    function updateSlug(val) {
+      const slugInput = document.getElementById('input-slug');
+      if (!slugInput) return;
+      const slug = val
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+      slugInput.value = slug || 'categoria';
+    }
+
+    function openSafeguardModal(categoryName, productCount) {
+      const modal = document.getElementById('safeguard-modal');
+      const dialog = document.getElementById('safeguard-dialog');
+      const title = document.getElementById('modal-target-title');
+      const count = document.getElementById('modal-product-count');
+
+      title.textContent = `Remover "${categoryName}"`;
+      count.textContent = productCount;
+
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        modal.classList.remove('opacity-0');
+        dialog.classList.remove('scale-95');
+        dialog.classList.add('scale-100');
+      }, 10);
+    }
+
+    function closeSafeguardModal() {
+      const modal = document.getElementById('safeguard-modal');
+      const dialog = document.getElementById('safeguard-dialog');
+      
+      modal.classList.add('opacity-0');
+      dialog.classList.remove('scale-100');
+      dialog.classList.add('scale-95');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+      }, 300);
+    }
+
+    function confirmSafeguardAction() {
+      closeSafeguardModal();
+      showToast('Produtos migrados e categoria removida com segurança!', 'done_all');
+    }
+
+    function handleSaveCategory() {
+      const nome = document.getElementById('input-nome').value;
+      showToast(`Categoria "${nome}" salva com sucesso!`, 'check_circle');
+    }
+
+    function showToast(message, icon) {
+      const toast = document.getElementById('toast-feedback');
+      const toastMsg = document.getElementById('toast-message');
+      const toastIcon = document.getElementById('toast-icon');
+
+      toastMsg.textContent = message;
+      toastIcon.textContent = icon || 'check_circle';
+
+      toast.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+      }, 3500);
+    }
+  </script>
+</div></main></div></body></html>
+
+<!-- Configurações - Supershushi Bar -->
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#0c0e15", "on-tertiary-container": "#4300a3", "on-primary-fixed": "#331200", "on-tertiary": "#3b0092", "error-container": "#93000a", "on-surface": "#e2e2ec", "on-surface-variant": "#e0c0b1", "secondary-fixed-dim": "#afc6ff", "on-error-container": "#ffdad6", "secondary-container": "#528dff", "primary-fixed": "#ffdbca", "on-primary-container": "#5e2700", "on-tertiary-fixed": "#23005c", "outline": "#a78b7d", "on-primary-fixed-variant": "#773300", "on-secondary-fixed": "#001a43", "primary-container": "#ff7a1a", "on-error": "#690005", "on-background": "#e2e2ec", "surface-container-high": "#282a31", "error": "#ffb4ab", "primary": "#ffb68e", "on-secondary-fixed-variant": "#004398", "surface-container": "#1d1f27", "on-secondary": "#002d6c", "on-secondary-container": "#00275f", "surface-dim": "#11131a", "outline-variant": "#584236", "on-primary": "#542200", "tertiary-fixed-dim": "#d0bcff", "primary-fixed-dim": "#ffb68e", "surface": "#11131a", "secondary-fixed": "#d9e2ff", "tertiary": "#d0bcff", "background": "#11131a", "surface-variant": "#33343d", "tertiary-fixed": "#e9ddff", "inverse-surface": "#e2e2ec", "inverse-primary": "#9c4500", "surface-container-low": "#191b23", "surface-bright": "#373941", "surface-tint": "#ffb68e", "on-tertiary-fixed-variant": "#5500cb", "inverse-on-surface": "#2e3038", "secondary": "#afc6ff", "surface-container-highest": "#33343d", "tertiary-container": "#ad8dff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-lg": "2.5rem", "margin-md": "2.5rem", "margin-lg": "4rem", "space-md": "1rem", "gutter-sm": "1rem", "space-xs": "0.25rem", "margin": "1.5rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "gutter": "1.5rem" }, "fontFamily": { "body-lg": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Syne" ], "display-hero-mobile": [ "Syne" ], "headline-sm": [ "Space Grotesk" ], "mono-price": [ "Space Grotesk" ], "body-md": [ "Plus Jakarta Sans" ], "label-md": [ "Space Grotesk" ], "label-caps": [ "Space Grotesk" ], "display-hero": [ "Syne" ], "headline-md": [ "Syne" ], "headline-lg": [ "Syne" ] }, "fontSize": { "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "mono-price": [ "16px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "label-md": [ "14px", { "lineHeight": "18px", "letterSpacing": "0.03em", "fontWeight": "500" } ], "label-caps": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.14em", "fontWeight": "700" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between p-gutter"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs"><div class="w-9 h-9 rounded-xl bg-primary-container flex items-center justify-center shadow-[0_0_20px_rgba(255,122,26,0.35)]"><span class="material-symbols-outlined text-surface-container-lowest text-[22px]">ramen_dining</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface">SUPERSHUSHI</span><span class="font-label-caps text-label-caps text-primary tracking-widest">ADMIN CONSOLE</span></div></div><div class="h-px w-full bg-surface-container-high"></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-high text-primary shadow-[inset_3px_0_0_0_#ff7a1a] font-semibold"><a class="flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="catalogo-de-produtos" href="#"><span class="material-symbols-outlined text-[20px]">restaurant_menu</span><span class="font-label-md text-label-md">Catálogo de Produtos</span></a><a class="flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="categorias" href="#"><span class="material-symbols-outlined text-[20px]">category</span><span class="font-label-md text-label-md">Categorias</span></a><a class="flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="configuracoes" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-md text-label-md">Configurações</span></a></nav></div><div class="flex flex-col gap-space-md pt-space-md border-t border-surface-container-high"><div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low"><div class="flex items-center gap-space-sm"><div class="relative"><div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[20px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary-container ring-2 ring-surface-container-lowest"></span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Chef Hiroshi</span><span class="font-label-caps text-label-caps text-secondary leading-tight mt-0.5">Master Admin</span></div></div><a class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-error hover:bg-surface-container transition-colors" data-path="login" href="#" title="Sair"><span class="material-symbols-outlined text-[18px]">logout</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/80 backdrop-blur-xl z-40 px-gutter-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-lg"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]">search</span><input class="w-80 h-10 pl-10 pr-space-md rounded-lg bg-surface-container text-on-surface placeholder:text-on-surface-variant/60 font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary transition-all" placeholder="Pesquisar pedidos, sushis ou insumos..." type="text"/></div></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs px-space-md h-10 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[18px] text-secondary">visibility</span><span>Ver Site Público</span></a><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 px-gutter-lg pb-margin-lg bg-surface"><div class="flex flex-col w-full">
+<!-- Interactive script for active tabs & switches -->
+<script>
+    function switchTab(evt, tabId) {
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-primary-container', 'text-on-primary-container', 'shadow-[0_0_20px_rgba(255,122,26,0.35)]');
+        btn.classList.add('text-on-surface-variant', 'hover:bg-surface-container', 'hover:text-on-surface');
+      });
+      evt.currentTarget.classList.remove('text-on-surface-variant', 'hover:bg-surface-container', 'hover:text-on-surface');
+      evt.currentTarget.classList.add('bg-primary-container', 'text-on-primary-container', 'shadow-[0_0_20px_rgba(255,122,26,0.35)]');
+      
+      const sections = ['section-identidade', 'section-canais', 'section-cardapio', 'section-equipe'];
+      sections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.remove('ring-1', 'ring-secondary');
+      });
+      const target = document.getElementById('section-' + tabId);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        target.classList.add('ring-1', 'ring-secondary');
+        setTimeout(() => target.classList.remove('ring-1', 'ring-secondary'), 1600);
+      }
+    }
+
+    function toggleSwitch(id) {
+      const pill = document.getElementById(id + '-pill');
+      const dot = document.getElementById(id + '-dot');
+      const isChecked = pill.getAttribute('data-checked') === 'true';
+      if (isChecked) {
+        pill.setAttribute('data-checked', 'false');
+        pill.classList.remove('bg-primary-container');
+        pill.classList.add('bg-surface-container-high');
+        dot.classList.remove('translate-x-5', 'bg-surface-container-lowest');
+        dot.classList.add('translate-x-0', 'bg-on-surface-variant');
+      } else {
+        pill.setAttribute('data-checked', 'true');
+        pill.classList.remove('bg-surface-container-high');
+        pill.classList.add('bg-primary-container');
+        dot.classList.remove('translate-x-0', 'bg-on-surface-variant');
+        dot.classList.add('translate-x-5', 'bg-surface-container-lowest');
+      }
+    }
+  </script>
+<!-- Ambient Ki Energy Atmosphere -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 right-12 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-80 -left-20 w-80 h-80 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Header / Action Bar -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-lg">
+<div class="flex flex-col max-w-2xl">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-caps text-label-caps text-primary tracking-widest">SISTEMA SUPERSHUSHI • MASTER LEVEL</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tight">Configurações da Plataforma</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Gerencie os dados institucionais do restaurante, canais de atendimento, regras de sincronização do cardápio e segurança da equipe.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>Desfazer</span>
+</button>
+<button class="relative flex items-center gap-space-sm px-space-lg py-2.5 rounded-lg bg-primary-container hover:bg-primary-container/90 text-on-primary-container font-label-md text-label-md font-bold transition-all shadow-[0_0_24px_rgba(255,122,26,0.35)] group">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-110">save</span>
+<span>Salvar Alterações</span>
+</button>
+</div>
+</div>
+<!-- Tab Bar -->
+<div class="w-full bg-surface-container-low p-1.5 rounded-xl flex flex-wrap gap-1 mb-space-xl">
+<button class="tab-btn flex items-center gap-space-xs px-space-md py-2 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary-container shadow-[0_0_20px_rgba(255,122,26,0.35)] transition-all" onclick="switchTab(event, 'identidade')">
+<span class="material-symbols-outlined text-[18px]">storefront</span>
+<span>Dados do Restaurante</span>
+</button>
+<button class="tab-btn flex items-center gap-space-xs px-space-md py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" onclick="switchTab(event, 'canais')">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Canais &amp; WhatsApp</span>
+</button>
+<button class="tab-btn flex items-center gap-space-xs px-space-md py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" onclick="switchTab(event, 'cardapio')">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Sincronização do Cardápio</span>
+</button>
+<button class="tab-btn flex items-center gap-space-xs px-space-md py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" onclick="switchTab(event, 'equipe')">
+<span class="material-symbols-outlined text-[18px]">shield_person</span>
+<span>Usuários &amp; Segurança</span>
+</button>
+</div>
+<!-- Main Asymmetric Bento Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- LEFT COLUMN: Identity + Channels (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Bloco 1: Identidade & Estabelecimento -->
+<section class="relative bg-surface-container-low rounded-xl p-space-lg transition-all" id="section-identidade">
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-primary">BLOCO 01</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Identidade &amp; Estabelecimento</h2>
+</div>
+</div>
+<span class="font-label-caps text-label-caps px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant">OMAKASE ATELIER</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-xs">
+<!-- Brand Mark / Logo Upload Card -->
+<div class="md:col-span-1 flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container text-center group">
+<div class="relative w-28 h-28 rounded-2xl bg-surface-container-lowest flex items-center justify-center overflow-hidden shadow-inner mb-space-sm">
+<img class="w-full h-full object-cover" data-alt="High-contrast minimalist Japanese mon crest badge for Supershushi restaurant with dragon motif and glowing deep orange neon line art on jet-black lacquer background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVbOxaBPfHmmUd-le2Z7ZavwCNtoVTsodHlxRLSSW3O91SU5M0A7dtf8R9VEt9wt225DeUm--kEQmFn2_q5uyg-8neJhtXY44PmTyzHfT_KXRJGCRq2IvxOtqzZ5H8Pznv20_10KfKtbMBEpaZZUBZImJmnI_FEVpGP8j2l_ceq_nbGeX7TfJx_r3CWhIbLl-MCwqu_0WHqc_dN_8z4M138AvEWEjPbQ-4sS15INU"/>
+<div class="absolute inset-0 bg-surface-container-lowest/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[28px]">photo_camera</span>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface uppercase font-bold">Emblema Oficial</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">PNG ou SVG translúcido</span>
+<button class="mt-space-sm text-primary font-label-md text-label-md hover:underline flex items-center gap-1">
+<span>Substituir</span>
+<span class="material-symbols-outlined text-[14px]">upload</span>
+</button>
+</div>
+<!-- Fields Form -->
+<div class="md:col-span-2 flex flex-col gap-space-sm">
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-1">NOME DO RESTAURANTE</label>
+<div class="relative flex items-center">
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-all" type="text" value="Supershushi Bar"/>
+<span class="material-symbols-outlined absolute right-3 text-primary text-[18px]">verified</span>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-1">SLOGAN INSTITUCIONAL</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-all" type="text" value="Dragon Energy Sushi Experience"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-1">ENDEREÇO FÍSICO DO OMAKASE</label>
+<div class="relative flex items-center">
+<input class="w-full h-11 pl-10 pr-space-md rounded-lg bg-surface-container text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-all" type="text" value="Alameda dos Samurais, 888 - Itaim Bibi, São Paulo - SP"/>
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">location_on</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bloco 2: Canais de Contato & Concierge -->
+<section class="relative bg-surface-container-low rounded-xl p-space-lg transition-all" id="section-canais">
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-secondary">BLOCO 02</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Canais de Contato &amp; Concierge</h2>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-high">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-caps text-label-caps text-secondary">WHATSAPP SYNC ON</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- WhatsApp Input -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<label class="font-label-caps text-label-caps text-on-surface-variant">WHATSAPP OFICIAL CONCIERGE</label>
+<span class="material-symbols-outlined text-secondary text-[16px]">bolt</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Linha prioritária para receber reservas e despachos do chef.</p>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-[20px]">call</span>
+<input class="w-full h-11 pl-11 pr-space-md rounded-lg bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm focus:outline-none focus:ring-1 focus:ring-secondary transition-all" type="text" value="+55 (11) 98722-4411"/>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-space-sm">
+<span class="font-label-caps text-label-caps text-primary">DESTINO:</span>
+<span class="font-body-sm text-body-sm text-on-surface">Atendimento VIP • Fila de Espera</span>
+</div>
+</div>
+<!-- Instagram Link -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<label class="font-label-caps text-label-caps text-on-surface-variant">PERFIL DO INSTAGRAM</label>
+<span class="material-symbols-outlined text-primary text-[16px]">travel_explore</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Sincronizado no rodapé público e stories do dia.</p>
+<div class="relative flex items-center">
+<span class="font-mono-price text-mono-price text-on-surface-variant absolute left-3">@</span>
+<input class="w-full h-11 pl-9 pr-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary transition-all" type="text" value="supershushibar"/>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">42.8k seguidores ativos</span>
+<a class="font-label-md text-label-md text-secondary hover:underline flex items-center gap-0.5" href="#">
+<span>Abrir Perfil</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Landline & Schedule -->
+<div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-1">TELEFONE FIXO DA CASA</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-all" type="text" value="+55 (11) 3045-8890"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-1">HORÁRIO DE FUNCIONAMENTO</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-all" type="text" value="Terça a Domingo: 19h00 às 00h30"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Bloco 5: Equipe & Permissões -->
+<section class="relative bg-surface-container-low rounded-xl p-space-lg transition-all" id="section-equipe">
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">admin_panel_settings</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-primary">BLOCO 05</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Equipe &amp; Permissões de Acesso</h2>
+</div>
+</div>
+<button class="flex items-center gap-1 px-space-sm py-1 rounded-lg bg-surface-container-high hover:bg-surface-container hover:text-on-surface text-primary font-label-md text-label-md transition-colors">
+<span class="material-symbols-outlined text-[16px]">person_add</span>
+<span>Convidar</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- User 1 -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center text-primary font-bold">H</div>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Chef Hiroshi Tanaka</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-primary font-label-caps text-label-caps">MASTER CHEF</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">hiroshi@supershushi.com.br • Acesso Total</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]" title="Chave 2FA Ativa">vpn_key</span>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- User 2 -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary font-bold">K</div>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Kenji Sato</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-caps text-label-caps">SUB-CHEF</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">kenji@supershushi.com.br • Cardápio e Estoque</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]" title="Chave 2FA Pendente">lock</span>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- User 3 -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant font-bold">M</div>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-on-surface-variant"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Mariana Souza</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps">ATENDIMENTO</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">concierge@supershushi.com.br • Reservas &amp; Clientes</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]" title="Chave 2FA Ativa">vpn_key</span>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT COLUMN: Rules + Database Sync + Metrics (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Bloco 4: Status do Banco de Dados & Nuvem -->
+<section class="relative bg-surface-container-low rounded-xl p-space-lg overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-secondary-container/10 blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">database</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-secondary">BLOCO 04</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Infraestrutura em Nuvem</h3>
+</div>
+</div>
+<div class="w-2.5 h-2.5 rounded-full bg-secondary-container shadow-[0_0_12px_#528dff]"></div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- PostgreSQL Status -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">dns</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">PostgreSQL / Prisma ORM</span>
+<span class="font-body-sm text-body-sm text-secondary">Conectado • Pool 18ms</span>
+</div>
+</div>
+<span class="font-mono-price text-mono-price text-on-surface font-bold">v16.2</span>
+</div>
+<!-- CDN Status -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">cloud_done</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">CDN de Imagens DragonEdge</span>
+<span class="font-body-sm text-body-sm text-primary">Distribuição Global Ativa</span>
+</div>
+</div>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-surface-container-high text-on-surface">EDGE-SP</span>
+</div>
+<!-- Sync Telemetry Sparkline -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant">FLUXO DE SINCRONIZAÇÃO (ÚLTIMAS 12H)</span>
+<span class="font-mono-price text-mono-price text-primary">99.98%</span>
+</div>
+<!-- Inline Data Visualization SVG Sparkline -->
+<svg class="w-full h-12 text-primary" fill="none" viewbox="0 0 300 50">
+<path d="M0 40 Q 25 35, 50 38 T 100 25 T 150 28 T 200 12 T 250 16 T 300 8" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M0 40 Q 25 35, 50 38 T 100 25 T 150 28 T 200 12 T 250 16 T 300 8 L 300 50 L 0 50 Z" fill="currentColor" fill-opacity="0.1"></path>
+<circle cx="300" cy="8" fill="currentColor" r="4"></circle>
+</svg>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Última sincronização completa:</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">há 2 minutos</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Bloco 3: Configurações de Exibição do Cardápio Público -->
+<section class="relative bg-surface-container-low rounded-xl p-space-lg transition-all" id="section-cardapio">
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-primary">BLOCO 03</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Cardápio Público &amp; Regras</h3>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">toggle_on</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Toggle 1: Service Tax -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container">
+<div class="flex flex-col pr-space-md">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Exibir aviso de taxa de serviço</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Destaca no checkout a taxa opcional de 13% para a brigada de sushiman.</span>
+</div>
+<button class="focus:outline-none" onclick="toggleSwitch('sw-tax')" type="button">
+<div class="w-12 h-7 rounded-full bg-primary-container flex items-center px-1 cursor-pointer transition-colors duration-200" data-checked="true" id="sw-tax-pill">
+<div class="w-5 h-5 rounded-full bg-surface-container-lowest translate-x-5 transition-transform duration-200 shadow-md" id="sw-tax-dot"></div>
+</div>
+</button>
+</div>
+<!-- Currency Settings -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Moeda padrão do salão</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Formato contábil aplicado nos valores dos pratos.</span>
+</div>
+<div class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest font-headline-sm text-headline-sm text-primary font-bold">
+                R$ BRL
+              </div>
+</div>
+<!-- Toggle 2: Fish Availability Alert -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container">
+<div class="flex flex-col pr-space-md">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Notificar indisponibilidade de pescados</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Alerta automático caso o fornecedor de Bluefin ou Uni falhe no lote.</span>
+</div>
+<button class="focus:outline-none" onclick="toggleSwitch('sw-fish')" type="button">
+<div class="w-12 h-7 rounded-full bg-primary-container flex items-center px-1 cursor-pointer transition-colors duration-200" data-checked="true" id="sw-fish-pill">
+<div class="w-5 h-5 rounded-full bg-surface-container-lowest translate-x-5 transition-transform duration-200 shadow-md" id="sw-fish-dot"></div>
+</div>
+</button>
+</div>
+<!-- Toggle 3: Maintenance Mode -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container">
+<div class="flex flex-col pr-space-md">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Modo Manutenção do Cardápio</span>
+<span class="w-2 h-2 rounded-full bg-error"></span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Fecha pedidos digitais temporariamente para balancear o salão.</span>
+</div>
+<button class="focus:outline-none" onclick="toggleSwitch('sw-maint')" type="button">
+<div class="w-12 h-7 rounded-full bg-surface-container-high flex items-center px-1 cursor-pointer transition-colors duration-200" data-checked="false" id="sw-maint-pill">
+<div class="w-5 h-5 rounded-full bg-on-surface-variant translate-x-0 transition-transform duration-200 shadow-md" id="sw-maint-dot"></div>
+</div>
+</button>
+</div>
+</div>
+</section>
+<!-- Culinary Ambience Atmosphere Card (Reflective Inspiration) -->
+<div class="relative rounded-xl overflow-hidden h-44 bg-surface-container-lowest flex items-end p-space-md group">
+<img class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" data-alt="Luxurious dark Japanese sushi bar with illuminated counter, wooden elements, master chef preparing nigiri with ambient soft warm golden light and deep obsidian shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX49eYwaJobXd6o5eYC-LUvoG8QgrTQLOKX9clgF_sZzdUhE0GE6b-AshaPOe5gM2qMAZwH9Rugx2hDqC7eR5AQ1vgOCyG5a2aziiEIyTxsObGjbk1OG5gTqMqCJrF2RS0PQIMhzP_jhA-0sgae3RIWOBoDcqJOJB2aUJg67iOIMssbqQ--WLDVFCr0ffP-H9lYK6o8_JE9MA4ud5dvEV-EPJWeQuI9-FbVXmwqRw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="relative z-10 flex items-center justify-between w-full">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-primary">AMBIÊNCIA ATIVA</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Balcão Omakase 10 Assentos</span>
+</div>
+<a class="px-space-md py-1.5 rounded-lg bg-surface-container-high/80 backdrop-blur text-on-surface font-label-md text-label-md hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center gap-1" href="#">
+<span>Ver Mapa</span>
+<span class="material-symbols-outlined text-[16px]">map</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Notification Toast Bar -->
+<div class="mt-space-xl p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Todas as alterações de segurança exigem confirmação biométrica do Master Chef.</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sessão criptografada de ponta a ponta através do protocolo Supershushi Vault.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<span class="font-label-caps text-label-caps text-on-surface-variant">VERSÃO 4.8.1-GA</span>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
+
+<!-- Catálogo de Produtos - Supershushi Bar -->
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#0c0e15", "on-tertiary-container": "#4300a3", "on-primary-fixed": "#331200", "on-tertiary": "#3b0092", "error-container": "#93000a", "on-surface": "#e2e2ec", "on-surface-variant": "#e0c0b1", "secondary-fixed-dim": "#afc6ff", "on-error-container": "#ffdad6", "secondary-container": "#528dff", "primary-fixed": "#ffdbca", "on-primary-container": "#5e2700", "on-tertiary-fixed": "#23005c", "outline": "#a78b7d", "on-primary-fixed-variant": "#773300", "on-secondary-fixed": "#001a43", "primary-container": "#ff7a1a", "on-error": "#690005", "on-background": "#e2e2ec", "surface-container-high": "#282a31", "error": "#ffb4ab", "primary": "#ffb68e", "on-secondary-fixed-variant": "#004398", "surface-container": "#1d1f27", "on-secondary": "#002d6c", "on-secondary-container": "#00275f", "surface-dim": "#11131a", "outline-variant": "#584236", "on-primary": "#542200", "tertiary-fixed-dim": "#d0bcff", "primary-fixed-dim": "#ffb68e", "surface": "#11131a", "secondary-fixed": "#d9e2ff", "tertiary": "#d0bcff", "background": "#11131a", "surface-variant": "#33343d", "tertiary-fixed": "#e9ddff", "inverse-surface": "#e2e2ec", "inverse-primary": "#9c4500", "surface-container-low": "#191b23", "surface-bright": "#373941", "surface-tint": "#ffb68e", "on-tertiary-fixed-variant": "#5500cb", "inverse-on-surface": "#2e3038", "secondary": "#afc6ff", "surface-container-highest": "#33343d", "tertiary-container": "#ad8dff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-lg": "2.5rem", "margin-md": "2.5rem", "margin-lg": "4rem", "space-md": "1rem", "gutter-sm": "1rem", "space-xs": "0.25rem", "margin": "1.5rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "gutter": "1.5rem" }, "fontFamily": { "body-lg": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Syne" ], "display-hero-mobile": [ "Syne" ], "headline-sm": [ "Space Grotesk" ], "mono-price": [ "Space Grotesk" ], "body-md": [ "Plus Jakarta Sans" ], "label-md": [ "Space Grotesk" ], "label-caps": [ "Space Grotesk" ], "display-hero": [ "Syne" ], "headline-md": [ "Syne" ], "headline-lg": [ "Syne" ] }, "fontSize": { "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "mono-price": [ "16px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "label-md": [ "14px", { "lineHeight": "18px", "letterSpacing": "0.03em", "fontWeight": "500" } ], "label-caps": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.14em", "fontWeight": "700" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between p-gutter"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs"><div class="w-9 h-9 rounded-xl bg-primary-container flex items-center justify-center shadow-[0_0_20px_rgba(255,122,26,0.35)]"><span class="material-symbols-outlined text-surface-container-lowest text-[22px]">ramen_dining</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface">SUPERSHUSHI</span><span class="font-label-caps text-label-caps text-primary tracking-widest">ADMIN CONSOLE</span></div></div><div class="h-px w-full bg-surface-container-high"></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-high text-primary shadow-[inset_3px_0_0_0_#ff7a1a] font-semibold"><a class="flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="catalogo-de-produtos" href="#"><span class="material-symbols-outlined text-[20px]">restaurant_menu</span><span class="font-label-md text-label-md">Catálogo de Produtos</span></a><a class="flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="categorias" href="#"><span class="material-symbols-outlined text-[20px]">category</span><span class="font-label-md text-label-md">Categorias</span></a><a class="flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="configuracoes" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-md text-label-md">Configurações</span></a></nav></div><div class="flex flex-col gap-space-md pt-space-md border-t border-surface-container-high"><div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low"><div class="flex items-center gap-space-sm"><div class="relative"><div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[20px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary-container ring-2 ring-surface-container-lowest"></span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Chef Hiroshi</span><span class="font-label-caps text-label-caps text-secondary leading-tight mt-0.5">Master Admin</span></div></div><a class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-error hover:bg-surface-container transition-colors" data-path="login" href="#" title="Sair"><span class="material-symbols-outlined text-[18px]">logout</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/80 backdrop-blur-xl z-40 px-gutter-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-lg"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]">search</span><input class="w-80 h-10 pl-10 pr-space-md rounded-lg bg-surface-container text-on-surface placeholder:text-on-surface-variant/60 font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary transition-all" placeholder="Pesquisar pedidos, sushis ou insumos..." type="text"/></div></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs px-space-md h-10 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[18px] text-secondary">visibility</span><span>Ver Site Público</span></a><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 px-gutter-lg pb-margin-lg bg-surface"><div class="flex flex-col w-full relative">
+<!-- Dynamic Activation & Styling Script for Shell Sidebar -->
+<script>
+    (function() {
+      const navLinks = document.querySelectorAll('aside nav a');
+      navLinks.forEach(link => {
+        if (link.getAttribute('data-path') === 'catalogo-de-produtos') {
+          link.className = "flex items-center gap-space-md px-space-md py-3 rounded-lg bg-surface-container-high text-primary shadow-[inset_3px_0_0_0_#ff7a1a] font-semibold transition-all";
+          const icon = link.querySelector('.material-symbols-outlined');
+          if (icon) icon.classList.add('text-primary');
+        } else {
+          link.classList.remove('bg-surface-container-high', 'text-primary', 'shadow-[inset_3px_0_0_0_#ff7a1a]', 'font-semibold');
+        }
+      });
+    })();
+  </script>
+<!-- Ambient Ki Energy Atmosphere Layer -->
+<div class="pointer-events-none absolute -top-16 -right-24 w-96 h-96 bg-primary-container/10 rounded-full blur-[120px] -z-10"></div>
+<div class="pointer-events-none absolute top-96 left-12 w-80 h-80 bg-secondary-container/10 rounded-full blur-[140px] -z-10"></div>
+<!-- Header Section: Management Title & Primary Trigger -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="inline-flex w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Console Gastronômico • Master Core</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight">Gerenciamento do Cardápio</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+        Gerencie todos os pratos, combos e criações do Supershushi Bar. Alterações refletem imediatamente no site público e nos totens de alta precisão.
+      </p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface text-label-md font-label-md transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">file_download</span>
+<span>Exportar CSV</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-lg py-2.5 rounded-lg bg-primary-container hover:bg-primary-container/90 text-on-primary-container font-headline-sm text-label-md uppercase tracking-wider shadow-[0_0_24px_rgba(255,122,26,0.35)] transition-all transform active:scale-95" onclick="document.getElementById('modal-drawer').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[20px] font-bold">add</span>
+<span>+ Novo Produto</span>
+</button>
+</div>
+</div>
+<!-- Control Surface & Multifunctional Filters -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-xl mb-space-md">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Live Search Box -->
+<div class="relative flex-1 max-w-xl">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full h-11 pl-11 pr-space-md rounded-lg bg-surface-container text-on-surface placeholder:text-on-surface-variant/50 font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" placeholder="Buscar produto pelo nome, código ou ingrediente..." type="text"/>
+</div>
+<!-- Segmented Dropdowns & Filter Toggles -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Category Selector -->
+<div class="relative">
+<select class="appearance-none h-11 pl-space-md pr-9 rounded-lg bg-surface-container text-on-surface font-label-md text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary cursor-pointer">
+<option value="all">Todas as Categorias</option>
+<option value="sushis">Sushis &amp; Nigiris</option>
+<option value="sashimis">Sashimis Nobres</option>
+<option value="combos">Combos Especiais</option>
+<option value="temakis">Temakis Black</option>
+<option value="hotrolls">Hot Rolls Cósmicos</option>
+<option value="especiais">Especiais da Casa</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+<!-- Status Filter -->
+<div class="relative">
+<select class="appearance-none h-11 pl-space-md pr-9 rounded-lg bg-surface-container text-on-surface font-label-md text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary cursor-pointer">
+<option value="all">Status: Todos</option>
+<option value="active">Apenas Ativos</option>
+<option value="inactive">Indisponíveis</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+<!-- Featured Switch Toggle -->
+<label class="flex items-center gap-space-xs h-11 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer select-none">
+<input class="w-4 h-4 rounded bg-surface-container-lowest text-primary-container accent-primary-container cursor-pointer" type="checkbox"/>
+<span class="font-label-md text-body-sm text-on-surface">Destaques Vitrine</span>
+</label>
+<!-- Reset Button -->
+<button class="h-11 w-11 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" title="Limpar Filtros">
+<span class="material-symbols-outlined text-[20px]">filter_alt_off</span>
+</button>
+</div>
+</div>
+<!-- Live Counter and Metadata Line -->
+<div class="flex items-center justify-between mt-space-sm pt-space-xs text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps text-label-caps text-secondary font-bold uppercase tracking-wider">Status do Inventário:</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Exibindo 6 de 48 pratos cadastrados</span>
+</div>
+<div class="flex items-center gap-space-sm text-label-caps font-label-caps">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)]"></span> 42 Ativos</span>
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-error-container shadow-[0_0_8px_rgba(239,68,68,0.8)]"></span> 6 Esgotados</span>
+</div>
+</div>
+</div>
+<!-- High-Density Obsidian Slate Product Table -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-2xl relative">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high/60 text-on-surface-variant font-label-caps text-label-caps uppercase tracking-widest select-none">
+<th class="py-4 pl-6 pr-3">Prato &amp; Arte</th>
+<th class="py-4 px-4">Código</th>
+<th class="py-4 px-4">Categoria</th>
+<th class="py-4 px-4">Preço Venda</th>
+<th class="py-4 px-4 text-center">Porção</th>
+<th class="py-4 px-4 text-center">Status</th>
+<th class="py-4 px-4 text-center">Vitrine</th>
+<th class="py-4 px-4">Atualizado</th>
+<th class="py-4 pr-6 pl-3 text-right">Ações</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm divide-y-0">
+<!-- Row 1: Combo Dragão Cósmico Supremo -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group">
+<td class="py-3.5 pl-6 pr-3">
+<div class="flex items-center gap-space-md">
+<div class="relative w-14 h-14 rounded-lg overflow-hidden bg-surface-container-high shrink-0 shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" data-alt="Close-up shot of high-gastronomy dragon roll sushi topped with seared wagyu beef, microgreens, edible 24k gold leaf flakes, and glossy unagi reduction served on a textured volcanic slate plate in a moody, low-lit izakaya setting with subtle neon kinetic blue highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB2GvSwvgtq0lukJGWf3baVJHZsv2A1M75WQVs75hZ6CwQm1Lp25MfBR8KkW4QcRuJBWdw2lnKEMJCIr_O2XPkf09BleTJnrfR1f3cbhgQdfU8UirP6G8aEFXiLGXSbgq5VSTc-fpfbF4v6U_f0x95r2lnz1lCztI6ZQvSX41QK_39u-Qoy9EwMzTUnSM-Y_7kRi3-JtFYPIK4rCnA17hPCHp3SCscujNM0oiQMdo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors truncate">Combo Dragão Cósmico Supremo</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/80 truncate">Uramaki spicy salmon, enguia caramelizada, lâminas de wagyu e ovas</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-mono-price text-body-sm text-secondary font-medium">SS-DRG-01</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-md text-body-sm">Combos Especiais</span>
+</td>
+<td class="py-3.5 px-4 font-mono-price text-mono-price text-primary font-bold">R$ 189,00</td>
+<td class="py-3.5 px-4 text-center font-label-md text-body-sm text-on-surface-variant">24 peças</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-950/60 text-emerald-400 font-label-caps text-label-caps shadow-[0_0_12px_rgba(52,211,153,0.2)]">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Ativo
+              </span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-container/20 text-primary-container font-label-caps text-label-caps font-bold">
+<span class="material-symbols-outlined text-[14px]">star</span> Home
+              </span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-body-sm text-body-sm whitespace-nowrap">Hoje, 14:22</td>
+<td class="py-3.5 pr-6 pl-3 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" onclick="document.getElementById('modal-drawer').classList.remove('hidden')" title="Editar Prato">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-secondary flex items-center justify-center transition-colors" title="Duplicar Item">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-emerald-400 flex items-center justify-center transition-colors" title="Alternar Disponibilidade">
+<span class="material-symbols-outlined text-[18px]">toggle_on</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-error flex items-center justify-center transition-colors" title="Remover">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Wagyu & Caviar Nigiri -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group bg-surface-container-low/30">
+<td class="py-3.5 pl-6 pr-3">
+<div class="flex items-center gap-space-md">
+<div class="relative w-14 h-14 rounded-lg overflow-hidden bg-surface-container-high shrink-0 shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" data-alt="Pair of luxurious Wagyu beef nigiri lightly torched with authentic blowtorch sear, topped with glistening Royal Osetra caviar and edible flower petals on artisan black ceramic plate, cosmic dark luxury mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7lrMTAwz5Hnipd4UQnu0V8V30DMwtMij1OpgiYK5ox9zBVS-j3nrqEhJtu-mpZiinc9ASkFXXFaRD5B3e1upNBEE5FITsEPVVj23p7LdBSky-1IG2WYtbAY2UKwfRIfYZ_PLerTlWcnz5oTijtFtyEQtyERY0g_JMpU6KwdtUMwYaDdnILEGM2-ffYxSKqpafLkxovDdvCChWOJl0UsnoOUp79Qi5_HTRCLptg8k"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors truncate">Wagyu &amp; Caviar Nigiri</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/80 truncate">Corte A5 selado no maçarico, caviar Osetra e flor de sal vulcânico</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-mono-price text-body-sm text-secondary font-medium">SS-NIG-04</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-md text-body-sm">Sushis &amp; Nigiris</span>
+</td>
+<td class="py-3.5 px-4 font-mono-price text-mono-price text-primary font-bold">R$ 94,00</td>
+<td class="py-3.5 px-4 text-center font-label-md text-body-sm text-on-surface-variant">2 peças</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-950/60 text-emerald-400 font-label-caps text-label-caps shadow-[0_0_12px_rgba(52,211,153,0.2)]">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Ativo
+              </span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-container/20 text-primary-container font-label-caps text-label-caps font-bold">
+<span class="material-symbols-outlined text-[14px]">star</span> Home
+              </span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-body-sm text-body-sm whitespace-nowrap">Ontem, 21:05</td>
+<td class="py-3.5 pr-6 pl-3 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" onclick="document.getElementById('modal-drawer').classList.remove('hidden')" title="Editar Prato">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-secondary flex items-center justify-center transition-colors" title="Duplicar Item">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-emerald-400 flex items-center justify-center transition-colors" title="Alternar Disponibilidade">
+<span class="material-symbols-outlined text-[18px]">toggle_on</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-error flex items-center justify-center transition-colors" title="Remover">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Sashimi Otoro Celestial -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group">
+<td class="py-3.5 pl-6 pr-3">
+<div class="flex items-center gap-space-md">
+<div class="relative w-14 h-14 rounded-lg overflow-hidden bg-surface-container-high shrink-0 shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" data-alt="Precision cuts of prized Otoro bluefin fatty tuna sashimi arranged meticulously on carved ice sphere with purple shiso leaves and fresh wasabi root shavings, luxury futuristic cyberpunk dining atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj16ReL5BcnRXH8xed_1uNZec_J8MtiZ_LFAKhWzKhC-R_1KsbpR_Iy96E45mTYdhX8Tcv5GSWt9Ld1S086i-rWe8MKsNi4MUwY-d3lfG8lSIkGEanCm-PjSzALNiFIT1YaY3HT_4vtA6Ak67TkSu-lM5vrLfCQN9DKpzvOclJE3v82njNBScfbj7utNu4a-pHkCZdSjMr7cmEfos9AvYzsgeUo0oTjmGeCeJ8Ek8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors truncate">Sashimi Otoro Celestial</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/80 truncate">Corte nobre da barriga do Atum Bluefin de pesca sustentável</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-mono-price text-body-sm text-secondary font-medium">SS-SAS-08</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-md text-body-sm">Sashimis Nobres</span>
+</td>
+<td class="py-3.5 px-4 font-mono-price text-mono-price text-primary font-bold">R$ 145,00</td>
+<td class="py-3.5 px-4 text-center font-label-md text-body-sm text-on-surface-variant">5 lâminas</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-error-container/40 text-error font-label-caps text-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Esgotado
+              </span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<span class="text-on-surface-variant/40 text-[18px]">—</span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-body-sm text-body-sm whitespace-nowrap">22 Out, 19:40</td>
+<td class="py-3.5 pr-6 pl-3 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" onclick="document.getElementById('modal-drawer').classList.remove('hidden')" title="Editar Prato">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-secondary flex items-center justify-center transition-colors" title="Duplicar Item">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-colors" title="Alternar Disponibilidade">
+<span class="material-symbols-outlined text-[18px]">toggle_off</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-error flex items-center justify-center transition-colors" title="Remover">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Hot Roll Dragon Flame -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group bg-surface-container-low/30">
+<td class="py-3.5 pl-6 pr-3">
+<div class="flex items-center gap-space-md">
+<div class="relative w-14 h-14 rounded-lg overflow-hidden bg-surface-container-high shrink-0 shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" data-alt="Crispy panko crust hot roll sushi overflowing with fresh cream cheese, salmon tartar, chives and fiery sweet chili teriyaki glaze with smoke rising in background, dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDiofLj5B1cgWmksBJ54Sw56AyXFe08vpWvl46vlGxSBAzhumbhyZph1JEMyd7Cr-wpHG2C1XlB2EwuyEcsTOa2uvOE1nuA7GTHp7uw96exqsbuz-pLc_bvB37tdlKP5ez04OXhvf09ewthg6BDmTXZj_eDRqDZvP3vdfU4tNhcicfLnpYeMlZLaa189DdaGD_VR4UL2CL5dZygyGK3FpplAhOCME8UHI_rYhdYNY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors truncate">Hot Roll Dragon Flame</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/80 truncate">Empanado panko crocante, salmão desfiado na brasa e tarê de rapadura</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-mono-price text-body-sm text-secondary font-medium">SS-HOT-12</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-md text-body-sm">Hot Rolls Cósmicos</span>
+</td>
+<td class="py-3.5 px-4 font-mono-price text-mono-price text-primary font-bold">R$ 56,00</td>
+<td class="py-3.5 px-4 text-center font-label-md text-body-sm text-on-surface-variant">10 peças</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-950/60 text-emerald-400 font-label-caps text-label-caps shadow-[0_0_12px_rgba(52,211,153,0.2)]">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Ativo
+              </span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-container/20 text-primary-container font-label-caps text-label-caps font-bold">
+<span class="material-symbols-outlined text-[14px]">star</span> Home
+              </span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-body-sm text-body-sm whitespace-nowrap">20 Out, 11:15</td>
+<td class="py-3.5 pr-6 pl-3 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" onclick="document.getElementById('modal-drawer').classList.remove('hidden')" title="Editar Prato">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-secondary flex items-center justify-center transition-colors" title="Duplicar Item">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-emerald-400 flex items-center justify-center transition-colors" title="Alternar Disponibilidade">
+<span class="material-symbols-outlined text-[18px]">toggle_on</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-error flex items-center justify-center transition-colors" title="Remover">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Temaki Black Botan -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group">
+<td class="py-3.5 pl-6 pr-3">
+<div class="flex items-center gap-space-md">
+<div class="relative w-14 h-14 rounded-lg overflow-hidden bg-surface-container-high shrink-0 shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" data-alt="Ultra crisp black nori temaki hand roll overflowing with sweet botan ebi prawns, spicy mayo, scallions and orange masago roe sitting in custom matte black wooden stand, deep obsidian aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBPlnVnC-Ica6_L9xh4Jyb9Sc8Z7pPcaGmTPST_2xZMUMYUREOPEXJXGXkP3qcDCoBYWlFvF_N1su1kQHVyWI8KwFv4KxAW2zGdkJY1H45W7wJJg8Wy0XURdxrai7t6Tc6g5gzw0fYkA5i5XKkiopjZQ6PxVjmvf99PaMpZKopiXzGpU9rnpr1uhkZnSRZDgsFY1tveCc_it621vk-GygMjQPlLUW1TTKnwSVk4J0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors truncate">Temaki Black Botan</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/80 truncate">Nori negro ultra crocante, camarão Botan fresco, togarashi e ovas</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-mono-price text-body-sm text-secondary font-medium">SS-TMK-05</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-md text-body-sm">Temakis Black</span>
+</td>
+<td class="py-3.5 px-4 font-mono-price text-mono-price text-primary font-bold">R$ 48,00</td>
+<td class="py-3.5 px-4 text-center font-label-md text-body-sm text-on-surface-variant">1 un (180g)</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-950/60 text-emerald-400 font-label-caps text-label-caps shadow-[0_0_12px_rgba(52,211,153,0.2)]">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Ativo
+              </span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<span class="text-on-surface-variant/40 text-[18px]">—</span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-body-sm text-body-sm whitespace-nowrap">18 Out, 16:30</td>
+<td class="py-3.5 pr-6 pl-3 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" onclick="document.getElementById('modal-drawer').classList.remove('hidden')" title="Editar Prato">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-secondary flex items-center justify-center transition-colors" title="Duplicar Item">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-emerald-400 flex items-center justify-center transition-colors" title="Alternar Disponibilidade">
+<span class="material-symbols-outlined text-[18px]">toggle_on</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-error flex items-center justify-center transition-colors" title="Remover">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Truffled Salmon Flight -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group bg-surface-container-low/30">
+<td class="py-3.5 pl-6 pr-3">
+<div class="flex items-center gap-space-md">
+<div class="relative w-14 h-14 rounded-lg overflow-hidden bg-surface-container-high shrink-0 shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" data-alt="Artistic degustation flight of four seared salmon nigiri drizzled with black truffle oil, adorned with lemon zest, chives and micro shiso leaves placed on dark river rock slab" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ3wf9_mVrGPvACq_mtRuEOArE5ddusuMC3DpWd5DCWOP8xBqpwIK5DW6W6FbeZv8Dn4cxFi2qryNSr9nMno8ddgsOUchtLLT3osnkzVa3gDsZTGEYNdRVkWPNgnNmutrIcN0L0EQnloYg6wdKr_UIAAOS6w7pEe4A8FD53RSplunnPaeR5TG-iegSzTLRoRYVmHs4Rie8unMS4zH1uEMt4iJ6v7iH9bZBx1t-gV8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors truncate">Truffled Salmon Flight</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/80 truncate">4 tempos de salmão maçaricado com azeite de trufas brancas e flor de sal</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-mono-price text-body-sm text-secondary font-medium">SS-ESP-19</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-md text-body-sm">Especiais da Casa</span>
+</td>
+<td class="py-3.5 px-4 font-mono-price text-mono-price text-primary font-bold">R$ 78,00</td>
+<td class="py-3.5 px-4 text-center font-label-md text-body-sm text-on-surface-variant">4 peças</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-950/60 text-emerald-400 font-label-caps text-label-caps shadow-[0_0_12px_rgba(52,211,153,0.2)]">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Ativo
+              </span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-container/20 text-primary-container font-label-caps text-label-caps font-bold">
+<span class="material-symbols-outlined text-[14px]">star</span> Home
+              </span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-body-sm text-body-sm whitespace-nowrap">15 Out, 22:10</td>
+<td class="py-3.5 pr-6 pl-3 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" onclick="document.getElementById('modal-drawer').classList.remove('hidden')" title="Editar Prato">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-secondary flex items-center justify-center transition-colors" title="Duplicar Item">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-emerald-400 flex items-center justify-center transition-colors" title="Alternar Disponibilidade">
+<span class="material-symbols-outlined text-[18px]">toggle_on</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-error flex items-center justify-center transition-colors" title="Remover">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Modern Slate Pagination Bar -->
+<div class="flex flex-col sm:flex-row items-center justify-between px-6 py-4 bg-surface-container-low gap-space-md">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span>Itens por página:</span>
+<select class="bg-surface-container text-on-surface rounded px-2 py-1 font-label-md text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary">
+<option value="6">6 pratos</option>
+<option selected="" value="12">12 pratos</option>
+<option value="24">24 pratos</option>
+<option value="48">48 pratos</option>
+</select>
+<span class="pl-2">Página 1 de 4 (48 pratos no total)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="w-8 h-8 rounded bg-surface-container text-on-surface-variant/40 flex items-center justify-center cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded bg-primary-container text-on-primary-container font-mono-price text-body-sm font-bold flex items-center justify-center shadow-[0_0_12px_rgba(255,122,26,0.4)]">
+          1
+        </button>
+<button class="w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-mono-price text-body-sm flex items-center justify-center transition-colors">
+          2
+        </button>
+<button class="w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-mono-price text-body-sm flex items-center justify-center transition-colors">
+          3
+        </button>
+<button class="w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-mono-price text-body-sm flex items-center justify-center transition-colors">
+          4
+        </button>
+<button class="w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Slide-Over Drawer: 'Adicionar / Editar Prato' -->
+<div class="fixed inset-0 z-50 flex justify-end bg-surface-container-lowest/80 backdrop-blur-md transition-opacity" id="modal-drawer">
+<div class="w-full max-w-2xl h-full bg-surface-container-lowest flex flex-col shadow-2xl relative overflow-hidden">
+<!-- Drawer Header -->
+<div class="flex items-center justify-between px-space-lg py-5 bg-surface-container-low shrink-0">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-wide">Editar Prato Cósmico</h2>
+<span class="font-label-caps text-label-caps text-secondary font-semibold">CÓDIGO: SS-DRG-01 • ÚLTIMA REVISÃO HOJE</span>
+</div>
+</div>
+<button class="w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" onclick="document.getElementById('modal-drawer').classList.add('hidden')" title="Fechar Painel">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Scrollable Content: 5 Structured Blocks -->
+<div class="flex-1 overflow-y-auto px-space-lg py-space-lg flex flex-col gap-space-lg">
+<!-- BLOCO A: IDENTIFICAÇÃO -->
+<div class="flex flex-col gap-space-md p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[18px]">fingerprint</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider font-bold">Bloco A: Identificação do Prato</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5 md:col-span-2">
+<label class="font-label-md text-body-sm text-on-surface font-semibold">Nome Oficial do Prato</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-secondary" type="text" value="Combo Dragão Cósmico Supremo"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-body-sm text-on-surface font-semibold">Slug Automático (URL amigável)</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container text-on-surface-variant font-mono-price text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" type="text" value="combo-dragao-cosmico-supremo"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-body-sm text-on-surface font-semibold">Código SKU / Interno</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container text-secondary font-mono-price text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary uppercase" type="text" value="SS-DRG-01"/>
+</div>
+<div class="flex flex-col gap-1.5 md:col-span-2">
+<label class="font-label-md text-body-sm text-on-surface font-semibold">Categoria Principal</label>
+<select class="w-full h-11 px-space-md rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary cursor-pointer">
+<option selected="" value="combos">Combos Especiais</option>
+<option value="sushis">Sushis &amp; Nigiris</option>
+<option value="sashimis">Sashimis Nobres</option>
+<option value="temakis">Temakis Black</option>
+<option value="hotrolls">Hot Rolls Cósmicos</option>
+<option value="especiais">Especiais da Casa</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5 md:col-span-2">
+<label class="font-label-md text-body-sm text-on-surface font-semibold">Descrição Curta (Vitrine / Card)</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" type="text" value="Uramaki spicy salmon, enguia caramelizada, lâminas de wagyu e ovas"/>
+</div>
+<div class="flex flex-col gap-1.5 md:col-span-2">
+<label class="font-label-md text-body-sm text-on-surface font-semibold">Descrição Completa e Experiência Sensorial</label>
+<textarea class="w-full p-space-md rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary resize-none" rows="3">Uma ascensão gustativa de textura e chamas. 24 peças meticulosamente montadas combinando a cremosidade do salmão picante marinado, a doçura profunda da enguia Kabayaki vitrificada e a suntuosidade marmorizada do Wagyu A5 maçaricado em tempo real com lâminas de ouro 24k comestíveis.</textarea>
+</div>
+</div>
+</div>
+<!-- BLOCO B: INFORMAÇÕES GASTRONÔMICAS -->
+<div class="flex flex-col gap-space-md p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[18px]">ramen_dining</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider font-bold">Bloco B: Informações Gastronômicas</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5 md:col-span-2">
+<label class="font-label-md text-body-sm text-on-surface font-semibold">Ingredientes Selecionados</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" type="text" value="Salmão Selvagem, Wagyu A5 Miyazaki, Enguia Unagi, Arroz Koshihikari, Ovas Massago, Nori Prime"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-body-sm text-on-surface font-semibold">Quantidade de Peças / Porção</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" type="text" value="24 peças"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-body-sm text-on-surface font-semibold">Tempo Médio de Preparo</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" type="text" value="18 - 25 min"/>
+</div>
+<div class="flex flex-col gap-2 md:col-span-2">
+<label class="font-label-md text-body-sm text-on-surface font-semibold">Alergênicos (Tags Rápidas)</label>
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-caps text-label-caps flex items-center gap-1">
+                  Glúten <button class="hover:text-error"><span class="material-symbols-outlined text-[14px]">cancel</span></button>
+</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-caps text-label-caps flex items-center gap-1">
+                  Frutos do Mar <button class="hover:text-error"><span class="material-symbols-outlined text-[14px]">cancel</span></button>
+</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-caps text-label-caps flex items-center gap-1">
+                  Derivados de Soja <button class="hover:text-error"><span class="material-symbols-outlined text-[14px]">cancel</span></button>
+</span>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px]">add</span> Adicionar Alergênico
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- BLOCO C: PREÇO & OFERTAS -->
+<div class="flex flex-col gap-space-md p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-space-xs text-primary-container">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider font-bold">Bloco C: Precificação de Venda</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-body-sm text-on-surface font-semibold">Preço de Venda Regular (R$)</label>
+<div class="relative">
+<span class="absolute left-3.5 top-1/2 -translate-y-1/2 font-mono-price text-body-sm text-primary font-bold">R$</span>
+<input class="w-full h-11 pl-12 pr-space-md rounded-lg bg-surface-container text-on-surface font-mono-price text-mono-price font-bold focus:outline-none focus:ring-1 focus:ring-primary-container" type="text" value="189,00"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-body-sm text-on-surface font-semibold">Preço Promocional (Opcional)</label>
+<div class="relative">
+<span class="absolute left-3.5 top-1/2 -translate-y-1/2 font-mono-price text-body-sm text-secondary font-bold">R$</span>
+<input class="w-full h-11 pl-12 pr-space-md rounded-lg bg-surface-container text-on-surface font-mono-price text-mono-price focus:outline-none focus:ring-1 focus:ring-secondary" placeholder="Ex: 169,00" type="text"/>
+</div>
+</div>
+</div>
+</div>
+<!-- BLOCO D: GALERIA E IMAGENS -->
+<div class="flex flex-col gap-space-md p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-tertiary">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider font-bold">Bloco D: Galeria &amp; Apresentação</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Max: 5MB (WebP / JPG)</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<!-- Active Image Card -->
+<div class="relative aspect-square rounded-xl overflow-hidden bg-surface-container group shadow-md">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCm7y3ZkOVexwG17thLyGT2kufGX1JamQ5K7kzUM9ALRp28YsjGpdRwzCfu0UfyL8s4gzg9weAYrI8MqwN0jn2Kijp3q3RkUF3VtiAzZD0XubR1xmV1JQAD3gQ6ThV9Vdka1BKCo-tNzqP7p1FnuPRprrR6OoPHwgmFuW-hWA4J_Yj8U6Q-xx1aYotppsIXBrTXVcHLLccbV7Hx76rJCGNzDVYZTOZ_611HLNQOaR1H"/>
+<div class="absolute inset-0 bg-surface-container-lowest/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+<button class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface hover:text-primary flex items-center justify-center" title="Trocar Imagem">
+<span class="material-symbols-outlined text-[18px]">cached</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-high text-error hover:bg-error-container flex items-center justify-center" title="Excluir">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-primary font-label-caps text-[10px] font-bold">CAPA</span>
+</div>
+<!-- Upload Dropzone -->
+<label class="col-span-2 flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer text-center">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-secondary mb-2">
+<span class="material-symbols-outlined text-[24px]">cloud_upload</span>
+</div>
+<span class="font-headline-sm text-body-sm text-on-surface font-semibold">Arraste ou clique para enviar foto</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/70 mt-0.5">Resolução recomendada: 1200x800px formato paisagem</span>
+<input class="hidden" type="file"/>
+</label>
+</div>
+</div>
+<!-- BLOCO E: PUBLICAÇÃO E DESTAQUES -->
+<div class="flex flex-col gap-space-md p-space-md rounded-xl bg-surface-container-low mb-space-lg">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider font-bold">Bloco E: Regras de Publicação</span>
+</div>
+<div class="flex flex-col gap-space-sm divide-y-0">
+<!-- Toggle Ativo -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container">
+<div class="flex flex-col">
+<span class="font-label-md text-body-md text-on-surface font-semibold">Prato Ativo para Venda</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Permite pedidos imediatos no salão, delivery e balcão</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-emerald-500"></div>
+</label>
+</div>
+<!-- Toggle Destaque Home -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container">
+<div class="flex flex-col">
+<span class="font-label-md text-body-md text-on-surface font-semibold">Exibir na Vitrine Principal (Home)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Prato posicionado em carrossel dinâmico de alta conversão</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- Drawer Fixed Actions Bottom -->
+<div class="flex items-center justify-between px-space-lg py-4 bg-surface-container-low shrink-0 shadow-lg">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-body-sm transition-colors" onclick="document.getElementById('modal-drawer').classList.add('hidden')">
+          Cancelar
+        </button>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary font-label-md text-body-sm transition-colors">
+            Salvar Rascunho
+          </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary-container hover:bg-primary-container/90 text-on-primary-container font-headline-sm text-label-md uppercase tracking-wider shadow-[0_0_20px_rgba(255,122,26,0.35)] transition-all" onclick="document.getElementById('modal-drawer').classList.add('hidden')">
+            Salvar &amp; Publicar
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
+
+<!-- Dashboard Administrativo - Supershushi Bar -->
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#0c0e15", "on-tertiary-container": "#4300a3", "on-primary-fixed": "#331200", "on-tertiary": "#3b0092", "error-container": "#93000a", "on-surface": "#e2e2ec", "on-surface-variant": "#e0c0b1", "secondary-fixed-dim": "#afc6ff", "on-error-container": "#ffdad6", "secondary-container": "#528dff", "primary-fixed": "#ffdbca", "on-primary-container": "#5e2700", "on-tertiary-fixed": "#23005c", "outline": "#a78b7d", "on-primary-fixed-variant": "#773300", "on-secondary-fixed": "#001a43", "primary-container": "#ff7a1a", "on-error": "#690005", "on-background": "#e2e2ec", "surface-container-high": "#282a31", "error": "#ffb4ab", "primary": "#ffb68e", "on-secondary-fixed-variant": "#004398", "surface-container": "#1d1f27", "on-secondary": "#002d6c", "on-secondary-container": "#00275f", "surface-dim": "#11131a", "outline-variant": "#584236", "on-primary": "#542200", "tertiary-fixed-dim": "#d0bcff", "primary-fixed-dim": "#ffb68e", "surface": "#11131a", "secondary-fixed": "#d9e2ff", "tertiary": "#d0bcff", "background": "#11131a", "surface-variant": "#33343d", "tertiary-fixed": "#e9ddff", "inverse-surface": "#e2e2ec", "inverse-primary": "#9c4500", "surface-container-low": "#191b23", "surface-bright": "#373941", "surface-tint": "#ffb68e", "on-tertiary-fixed-variant": "#5500cb", "inverse-on-surface": "#2e3038", "secondary": "#afc6ff", "surface-container-highest": "#33343d", "tertiary-container": "#ad8dff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-lg": "2.5rem", "margin-md": "2.5rem", "margin-lg": "4rem", "space-md": "1rem", "gutter-sm": "1rem", "space-xs": "0.25rem", "margin": "1.5rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "gutter": "1.5rem" }, "fontFamily": { "body-lg": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Syne" ], "display-hero-mobile": [ "Syne" ], "headline-sm": [ "Space Grotesk" ], "mono-price": [ "Space Grotesk" ], "body-md": [ "Plus Jakarta Sans" ], "label-md": [ "Space Grotesk" ], "label-caps": [ "Space Grotesk" ], "display-hero": [ "Syne" ], "headline-md": [ "Syne" ], "headline-lg": [ "Syne" ] }, "fontSize": { "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "mono-price": [ "16px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "label-md": [ "14px", { "lineHeight": "18px", "letterSpacing": "0.03em", "fontWeight": "500" } ], "label-caps": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.14em", "fontWeight": "700" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between p-gutter"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs"><div class="w-9 h-9 rounded-xl bg-primary-container flex items-center justify-center shadow-[0_0_20px_rgba(255,122,26,0.35)]"><span class="material-symbols-outlined text-surface-container-lowest text-[22px]">ramen_dining</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface">SUPERSHUSHI</span><span class="font-label-caps text-label-caps text-primary tracking-widest">ADMIN CONSOLE</span></div></div><div class="h-px w-full bg-surface-container-high"></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-high text-primary shadow-[inset_3px_0_0_0_#ff7a1a] font-semibold"><a aria-current="page" class="flex items-center gap-space-md px-space-md py-3 rounded-lg transition-all bg-surface-container-high text-primary shadow-[inset_3px_0_0_0_#ff7a1a] font-semibold" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="catalogo-de-produtos" href="#"><span class="material-symbols-outlined text-[20px]">restaurant_menu</span><span class="font-label-md text-label-md">Catálogo de Produtos</span></a><a class="flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="categorias" href="#"><span class="material-symbols-outlined text-[20px]">category</span><span class="font-label-md text-label-md">Categorias</span></a><a class="flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="configuracoes" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-md text-label-md">Configurações</span></a></nav></div><div class="flex flex-col gap-space-md pt-space-md border-t border-surface-container-high"><div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low"><div class="flex items-center gap-space-sm"><div class="relative"><div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[20px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary-container ring-2 ring-surface-container-lowest"></span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Chef Hiroshi</span><span class="font-label-caps text-label-caps text-secondary leading-tight mt-0.5">Master Admin</span></div></div><a class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-error hover:bg-surface-container transition-colors" data-path="login" href="#" title="Sair"><span class="material-symbols-outlined text-[18px]">logout</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/80 backdrop-blur-xl z-40 px-gutter-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-lg"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]">search</span><input class="w-80 h-10 pl-10 pr-space-md rounded-lg bg-surface-container text-on-surface placeholder:text-on-surface-variant/60 font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary transition-all" placeholder="Pesquisar pedidos, sushis ou insumos..." type="text"/></div></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs px-space-md h-10 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[18px] text-secondary">visibility</span><span>Ver Site Público</span></a><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 px-gutter-lg pb-margin-lg bg-surface"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Overlay (Cosmic Cyberpunk-Luxe) -->
+<div class="relative w-full">
+<div class="absolute -top-16 right-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-48 left-10 w-80 h-80 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- 1. Header & Live Sync Status Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md mb-gutter">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm mb-1">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Console Operacional</span>
+<span class="w-1 h-1 rounded-full bg-surface-variant"></span>
+<span class="font-mono-price text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+            Terça-feira, 24 de Outubro
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Bem-vindo de volta, <span class="text-primary-container">Chef &amp; Curador</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Monitoramento de frescor dos pescados nobres, estoque omakase e vitrine digital ao vivo.
+        </p>
+</div>
+<!-- Live Sync Pill and Quick Status Indicator -->
+<div class="flex items-center gap-space-md self-start lg:self-center">
+<div class="flex items-center gap-space-sm px-space-md py-2.5 rounded-full bg-surface-container-low shadow-sm">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary-container"></span>
+</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Cardápio Público Sincronizado</span>
+<span class="font-label-caps text-[10px] text-surface-container-lowest bg-primary-fixed-dim px-2 py-0.5 rounded-full uppercase tracking-wider font-bold">Online</span>
+</div>
+<a class="flex items-center justify-center w-10 h-10 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface transition-all" href="#" title="Atualizar Métricas">
+<span class="material-symbols-outlined text-[19px]">sync</span>
+</a>
+</div>
+</div>
+<!-- 2. Visual KPI Grid (5 Metric Blocks) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md mb-gutter-lg">
+<!-- Metric 1: Total Produtos -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low shadow-md relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Total Cadastrados</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="font-display-hero text-[34px] leading-tight text-on-surface font-bold tracking-tight">48</div>
+<div class="flex items-center gap-1.5 mt-1 font-body-sm text-body-sm text-secondary">
+<span class="material-symbols-outlined text-[15px]">trending_up</span>
+<span class="font-semibold">+3 novos</span>
+<span class="text-on-surface-variant/70">este mês</span>
+</div>
+</div>
+</div>
+<!-- Metric 2: Ativos no Menu -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low shadow-md relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Ativos no Menu</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="font-display-hero text-[34px] leading-tight text-on-surface font-bold tracking-tight">42 <span class="font-headline-sm text-headline-sm text-on-surface-variant font-normal">pratos</span></div>
+<div class="flex items-center gap-1.5 mt-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="text-primary font-mono-price font-bold">87.5%</span>
+<span>disponibilidade total</span>
+</div>
+</div>
+</div>
+<!-- Metric 3: Esgotados / Indisponíveis -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low shadow-md relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Indisponíveis</span>
+<div class="w-8 h-8 rounded-lg bg-error-container/20 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="font-display-hero text-[34px] leading-tight text-error font-bold tracking-tight">06 <span class="font-headline-sm text-headline-sm text-on-surface-variant font-normal">itens</span></div>
+<div class="flex items-center gap-1 mt-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span class="truncate">Aviso de frescor/safra</span>
+</div>
+</div>
+</div>
+<!-- Metric 4: Categorias -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low shadow-md relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Categorias</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">folder_open</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="font-display-hero text-[34px] leading-tight text-on-surface font-bold tracking-tight">07</div>
+<div class="flex items-center gap-1 mt-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="text-tertiary font-semibold">100%</span>
+<span>ativas e ordenadas</span>
+</div>
+</div>
+</div>
+<!-- Metric 5: Vitrine Cósmica / Destaques -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low shadow-md relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Vitrine Cósmica</span>
+<div class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="font-display-hero text-[34px] leading-tight text-on-surface font-bold tracking-tight">05 <span class="font-headline-sm text-headline-sm text-primary font-normal">slots</span></div>
+<div class="flex items-center gap-1 mt-1 font-body-sm text-body-sm text-primary-container font-medium">
+<span class="material-symbols-outlined text-[15px]">stars</span>
+<span>Home com alta taxa</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Quick Actions Ribbon -->
+<div class="flex flex-wrap items-center justify-between gap-space-md p-space-md mb-gutter-lg rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[22px]">bolt</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Ações Rápidas de Curadoria</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Cadastrar Novo Prato (Primary Energy Trigger) -->
+<a class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-primary-container text-surface-container-lowest font-headline-sm text-label-md uppercase tracking-wider font-bold shadow-[0_0_24px_rgba(255,122,26,0.35)] hover:shadow-[0_0_32px_rgba(255,122,26,0.55)] transition-all" href="#">
+<span class="material-symbols-outlined text-[19px]">add</span>
+<span>Cadastrar Novo Prato</span>
+</a>
+<!-- Gerenciar Catálogo -->
+<a class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all" href="#">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">fastfood</span>
+<span>Gerenciar Catálogo</span>
+</a>
+<!-- Organizar Categorias -->
+<a class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all" href="#">
+<span class="material-symbols-outlined text-[18px] text-tertiary">tune</span>
+<span>Organizar Categorias</span>
+</a>
+<!-- Ver Menu Público Ao Vivo -->
+<a class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-variant text-secondary font-label-md text-label-md transition-all" href="#">
+<span>Ver Menu Público Ao Vivo</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- 4. Two Central Columns: Newly Added & Availability Alerts -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-gutter-lg">
+<!-- Coluna 1: Recém Adicionados ao Cardápio (7 cols) -->
+<div class="lg:col-span-7 flex flex-col p-space-lg rounded-xl bg-surface-container-low shadow-md">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container shadow-[0_0_8px_currentColor] text-primary-container"></span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Recém Adicionados ao Cardápio</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pratos incluídos recentemente na curadoria pública</span>
+</div>
+</div>
+<a class="font-label-md text-label-md text-primary hover:text-primary-fixed transition-colors flex items-center gap-1" href="#">
+<span>Ver Todos</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- List of 4 Dishes -->
+<div class="flex flex-col gap-space-sm">
+<!-- Dish 1 -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container hover:bg-surface-container-high transition-all group">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Culinary close up of Bluefin Otoro Nigiri sushi with edible 24k gold leaf and microgreens placed on a dark slate plate with faint blue and orange atmospheric steam" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9uyTXiWAmrahTy_SU0omeO3nvobbvPqCmAJRFr31O6niFiM0AOH5UBBJn6jsBVfG3tuAwoqQ9cy25inLrzLm-7i2S0AnOSEdT_idDJmufZX8jf57i3JVRvCcM6gH66Ly8BV4_dgGrpmlOVX1C_AEpURyFSlO06QND2T0IieB9vKjer7hiQH8Jt2KUO4EtULLbMvGqItx5BADd7MbxIizaSxj8oevNv0kP84kBKmw"/>
+<span class="absolute bottom-1 right-1 w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold truncate">Nigiri Bluefin Otoro Gold</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-primary text-[10px] font-mono-price uppercase font-bold tracking-wider">Chef Special</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Sushis Especiais • Atum Bluefin de Fukuoka &amp; Folha de Ouro</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg flex-shrink-0 pl-space-sm">
+<div class="flex flex-col items-end">
+<span class="font-mono-price text-mono-price text-on-surface">R$ 68,00</span>
+<span class="font-label-caps text-[10px] text-primary-container uppercase font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Publicado
+                </span>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-bright flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" title="Editar Prato">
+<span class="material-symbols-outlined text-[17px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Dish 2 -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container hover:bg-surface-container-high transition-all group">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Exquisite Wagyu A5 Nigiri lightly seared with truffle teriyaki glaze and chives served on an obsidian black dish under moody neon illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATCDdOm8Gh7KTVxlQXPRzbyCtgj01D9act2YhKbYIKv3s45LzuovkPUxQ-QX85TdzTntaPdySwvRyYSYHQw783xcXk3LMYlDjvfa7G4Cj2wpNubPP5RSfqLAxbcckrrPAIBi76ZZ6XSyZ9fyDo6QFdqDPRc_1BYvta4rNn_SJ4KhJUNx8lTQnbrNdSUnqB8sPEVbk7navYQkL2OHOzAbcXO3sPjjGdOeWaoTAPzv8"/>
+<span class="absolute bottom-1 right-1 w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold truncate">Wagyu A5 Miyazaki Trufado</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Nigiris Quentes • Beef A5 maçaricado, azeite trufado</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg flex-shrink-0 pl-space-sm">
+<div class="flex flex-col items-end">
+<span class="font-mono-price text-mono-price text-on-surface">R$ 74,00</span>
+<span class="font-label-caps text-[10px] text-primary-container uppercase font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Publicado
+                </span>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-bright flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" title="Editar Prato">
+<span class="material-symbols-outlined text-[17px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Dish 3 -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container hover:bg-surface-container-high transition-all group">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="High-end sushi plate with salmon belly sashimi infused with ponzu ikura caviar and smoke mist rising in dark luxury ambient bar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDenMENhvQ5YGtcQmIRTrrtZrOXpAlO0ICaYC5OnvCQCFmpB82J07L1Gbfv3YJTjmHfK0Nt--SwH0mmFHq3ZkzSWp28JzgqCHhUD4HFYWanzvv_w_k6Pl359V3zjOSOMXiw7P5SFdasWA6nLudCktRTrotZbBiGqOTUaHJfAn9f69y7WIeClIW9WOfI5O0Kh_FGNx4l_mo9EGjCF1KBuXvAKNghM3PYhfr7Bg4-R-c"/>
+<span class="absolute bottom-1 right-1 w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold truncate">Sashimi Shake Belly &amp; Ikura</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Sashimis Nobres • Barriga de salmão maçaricada, ovas de salmão</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg flex-shrink-0 pl-space-sm">
+<div class="flex flex-col items-end">
+<span class="font-mono-price text-mono-price text-on-surface">R$ 56,00</span>
+<span class="font-label-caps text-[10px] text-primary-container uppercase font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Publicado
+                </span>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-bright flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" title="Editar Prato">
+<span class="material-symbols-outlined text-[17px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Dish 4 -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container hover:bg-surface-container-high transition-all group">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Artisanal cocktail with japanese yuzu gin and smoked cinnamon stick in modern crystal glass over dark wet stone countertop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXxboP7QBYSOPgtfUB3EMHlI3ybKYK4HeVN3s3he5KCIqxAZtB4lohczGWi-ZwzFmyFEbcVDcCg6Ila4-tmvDB4MjN_RrEYScH-Kocj-cPvMXbq-bmjpZOxw0jjiUNNC5zsJCTdvRNsB0AiXucf31dGRdeTx9MxsFZaAFXgtXDvJzH_SpQPx8UQZpaJh7BwQ0OVK9YJf5k85BnWDH6fDb9c7YNl_oW7AV-cBYBeJE"/>
+<span class="absolute bottom-1 right-1 w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold truncate">Cocktail Yuzu Ki Flare</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-secondary text-[10px] font-mono-price uppercase font-bold tracking-wider">Mixologia</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Drinks • Gin artesanal japonês, infusão cítrica e defumação</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg flex-shrink-0 pl-space-sm">
+<div class="flex flex-col items-end">
+<span class="font-mono-price text-mono-price text-on-surface">R$ 44,00</span>
+<span class="font-label-caps text-[10px] text-primary-container uppercase font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Publicado
+                </span>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-bright flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" title="Editar Prato">
+<span class="material-symbols-outlined text-[17px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Coluna 2: Atenção & Indisponibilidade (5 cols) -->
+<div class="lg:col-span-5 flex flex-col p-space-lg rounded-xl bg-surface-container-low shadow-md">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-error shadow-[0_0_8px_currentColor] text-error"></span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Atenção &amp; Indisponibilidade</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pescados sazonais desativados temporariamente</span>
+</div>
+</div>
+<span class="font-mono-price text-body-sm px-2.5 py-1 rounded-full bg-error-container/30 text-error font-semibold">2 Itens Críticos</span>
+</div>
+<!-- Alert Items Cards -->
+<div class="flex flex-col gap-space-md">
+<!-- Alert Item 1: Uni Fresco -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-error-container/30 flex items-center justify-center text-error flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">no_meals</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold">Uni Fresco de Santa Catarina</span>
+<span class="font-label-caps text-label-caps text-error">Esgotado • Aguardando desembarque</span>
+</div>
+</div>
+<span class="font-mono-price text-body-sm text-on-surface-variant">R$ 82,00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Lote de ouriço-do-mar pausado no menu devido ao protocolo estrito de frescor 24h. Próxima entrega marítima prevista para quarta-feira 14h.
+            </p>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-caps text-[11px] text-on-surface-variant/70 uppercase">Pausado há 5 horas</span>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold transition-all" onclick="this.textContent = 'Ativado!'; this.classList.remove('bg-surface-container-high', 'text-on-surface'); this.classList.add('bg-primary-container', 'text-surface-container-lowest');">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Ativar com 1 Clique</span>
+</button>
+</div>
+</div>
+<!-- Alert Item 2: King Crab do Alasca -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-error-container/30 flex items-center justify-center text-error flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">ac_unit</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold">King Crab do Alasca Glaceado</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Fora de Safra • Temporada Fechada</span>
+</div>
+</div>
+<span class="font-mono-price text-body-sm text-on-surface-variant">R$ 130,00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Item sazonal exclusivo removido da lista do cardápio digital de hoje para evitar pedidos indesejados no salão.
+            </p>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-caps text-[11px] text-on-surface-variant/70 uppercase">Pausado pelo Chef</span>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold transition-all" onclick="this.textContent = 'Ativado!'; this.classList.remove('bg-surface-container-high', 'text-on-surface'); this.classList.add('bg-primary-container', 'text-surface-container-lowest');">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Ativar no Cardápio</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. Audit Log / Histórico Recente de Modificações no Menu -->
+<div class="flex flex-col p-space-lg rounded-xl bg-surface-container-low shadow-md">
+<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-space-sm pb-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">history</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Histórico Recente de Modificações no Menu</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Registro das últimas alterações de preço, estoque e vitrine</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+<span>Filtrar Logs</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Exportar</span>
+</button>
+</div>
+</div>
+<!-- Audit Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="text-on-surface-variant/70 font-label-caps text-label-caps uppercase bg-surface-container/50">
+<th class="py-3 px-space-md rounded-l-lg">Horário</th>
+<th class="py-3 px-space-md">Operador</th>
+<th class="py-3 px-space-md">Ação Realizada</th>
+<th class="py-3 px-space-md">Item Impactado</th>
+<th class="py-3 px-space-md">Detalhes / Valores</th>
+<th class="py-3 px-space-md text-right rounded-r-lg">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/40 font-body-sm text-body-sm">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container/40 transition-colors">
+<td class="py-3.5 px-space-md font-mono-price text-on-surface font-medium whitespace-nowrap">
+                Hoje, 18:42
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary-container text-surface-container-lowest flex items-center justify-center font-bold text-[10px]">
+                    H
+                  </div>
+<span class="text-on-surface font-semibold">Chef Hiroshi</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-on-surface font-medium">
+                Pausa Temporária de Item
+              </td>
+<td class="py-3.5 px-space-md text-on-surface-variant font-semibold">
+                Uni Fresco de SC
+              </td>
+<td class="py-3.5 px-space-md text-on-surface-variant">
+                Definido para 'Esgotado' por controle de frescor
+              </td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container/20 text-error text-[11px] font-bold font-label-caps uppercase">
+                  Pausado
+                </span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container/40 transition-colors">
+<td class="py-3.5 px-space-md font-mono-price text-on-surface font-medium whitespace-nowrap">
+                Hoje, 17:15
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[10px]">
+                    A
+                  </div>
+<span class="text-on-surface font-semibold">Ana Gerente</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-on-surface font-medium">
+                Ajuste de Preço
+              </td>
+<td class="py-3.5 px-space-md text-on-surface-variant font-semibold">
+                Wagyu A5 Miyazaki
+              </td>
+<td class="py-3.5 px-space-md text-on-surface-variant">
+                Atualizado de <span class="line-through text-on-surface-variant/60 font-mono-price">R$ 69,00</span> para <span class="text-primary font-mono-price font-bold">R$ 74,00</span>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-secondary text-[11px] font-bold font-label-caps uppercase">
+                  Sincronizado
+                </span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container/40 transition-colors">
+<td class="py-3.5 px-space-md font-mono-price text-on-surface font-medium whitespace-nowrap">
+                Hoje, 15:30
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary-container text-surface-container-lowest flex items-center justify-center font-bold text-[10px]">
+                    H
+                  </div>
+<span class="text-on-surface font-semibold">Chef Hiroshi</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-on-surface font-medium">
+                Criação de Novo Prato
+              </td>
+<td class="py-3.5 px-space-md text-on-surface-variant font-semibold">
+                Nigiri Bluefin Otoro Gold
+              </td>
+<td class="py-3.5 px-space-md text-on-surface-variant">
+                Adicionado com destaque na 'Vitrine Cósmica' (Home)
+              </td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-container/20 text-primary-container text-[11px] font-bold font-label-caps uppercase">
+                  Novo Prato
+                </span>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container/40 transition-colors">
+<td class="py-3.5 px-space-md font-mono-price text-on-surface font-medium whitespace-nowrap">
+                Ontem, 23:10
+              </td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-bold text-[10px]">
+                    S
+                  </div>
+<span class="text-on-surface font-semibold">Sistema Automático</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-on-surface font-medium">
+                Fechamento de Cardápio Noturno
+              </td>
+<td class="py-3.5 px-space-md text-on-surface-variant font-semibold">
+                Todos os Pratos Quentes
+              </td>
+<td class="py-3.5 px-space-md text-on-surface-variant">
+                Encerramento de pedidos da cozinha quente conforme horário
+              </td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant text-[11px] font-bold font-label-caps uppercase">
+                  Concluído
+                </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Footer Note & Pagination link -->
+<div class="flex items-center justify-between pt-space-md mt-space-sm text-body-sm text-on-surface-variant">
+<span>Exibindo as 4 atividades mais recentes de curadoria</span>
+<a class="font-label-md text-label-md text-secondary hover:underline flex items-center gap-1" href="#">
+<span>Ver log completo de auditoria</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
+
+<!-- Login Administrativo - Supershushi Bar -->
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Supershushi Bar Admin — Autenticação</title>
+<!-- Google Fonts: Syne, Space Grotesk, Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined (Exact Link required) -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary": "#002d6c",
+            "on-background": "#e2e2ec",
+            "inverse-on-surface": "#2e3038",
+            "on-secondary-fixed-variant": "#004398",
+            "secondary-container": "#528dff",
+            "on-tertiary-fixed": "#23005c",
+            "on-error": "#690005",
+            "on-primary-fixed": "#331200",
+            "surface-variant": "#33343d",
+            "outline-variant": "#584236",
+            "on-tertiary": "#3b0092",
+            "outline": "#a78b7d",
+            "on-primary": "#542200",
+            "primary-container": "#ff7a1a",
+            "tertiary-fixed": "#e9ddff",
+            "on-surface": "#e2e2ec",
+            "surface-container-low": "#191b23",
+            "secondary": "#afc6ff",
+            "surface-dim": "#11131a",
+            "primary-fixed": "#ffdbca",
+            "surface-container-highest": "#33343d",
+            "on-secondary-container": "#00275f",
+            "on-error-container": "#ffdad6",
+            "on-primary-fixed-variant": "#773300",
+            "error-container": "#93000a",
+            "inverse-primary": "#9c4500",
+            "secondary-fixed": "#d9e2ff",
+            "inverse-surface": "#e2e2ec",
+            "on-tertiary-container": "#4300a3",
+            "secondary-fixed-dim": "#afc6ff",
+            "tertiary-fixed-dim": "#d0bcff",
+            "surface-container-high": "#282a31",
+            "on-tertiary-fixed-variant": "#5500cb",
+            "surface-bright": "#373941",
+            "on-primary-container": "#5e2700",
+            "surface-container-lowest": "#0c0e15",
+            "surface": "#11131a",
+            "primary": "#ffb68e",
+            "surface-tint": "#ffb68e",
+            "background": "#11131a",
+            "primary-fixed-dim": "#ffb68e",
+            "on-surface-variant": "#e0c0b1",
+            "error": "#ffb4ab",
+            "on-secondary-fixed": "#001a43",
+            "tertiary": "#d0bcff",
+            "tertiary-container": "#ad8dff",
+            "surface-container": "#1d1f27"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "fontFamily": {
+            "mono-price": ["Space Grotesk"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-sm": ["Space Grotesk"],
+            "headline-lg-mobile": ["Syne"],
+            "display-hero": ["Syne"],
+            "headline-md": ["Syne"],
+            "display-hero-mobile": ["Syne"],
+            "label-caps": ["Space Grotesk"],
+            "headline-lg": ["Syne"],
+            "label-md": ["Space Grotesk"]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen selection:bg-primary-container selection:text-on-primary-container font-body-md overflow-x-hidden">
+<!-- Split Screen Layout -->
+<div class="min-h-screen w-full flex flex-col lg:flex-row relative">
+<!-- Lado Esquerdo / Área Visual e Editorial Imersiva -->
+<section class="relative lg:w-7/12 min-h-[520px] lg:min-h-screen flex flex-col justify-between p-8 sm:p-12 lg:p-16 overflow-hidden bg-surface-container-lowest border-b lg:border-b-0 lg:border-r border-outline-variant/40">
+<!-- Imagem de Fundo com data-alt e Sobreposição Gradiente Cósmica Escura -->
+<div class="absolute inset-0 bg-cover bg-center mix-blend-luminosity opacity-40 scale-105 transition-transform duration-1000 ease-out" data-alt="Exquisite contemporary dark-mode Japanese omakase setting with pristine sashimi arrangements on bespoke volcanic black slate, warm amber counter spotlighting, subtle smoke wisps, and cinematic deep midnight shadows infused with subtle fiery orange reflections." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCY7fzGwcxeY8A6i20gO_XJ0DYFktKkPMnQ4D7LQZcaa6vN2YxiI3sr8j58cm0Rn0nMMx8F-Bo82rQHi_tu-8fEcknau47YqB8_gZefabl04eeYP9yXoy6iHFTSIkLCcivsoVSOMaVZLG7yC5Tdoxh_3Y-gszomAz1WVjO9pIMqwavlcRKdOq2I6wd3SJFLm9jOjUlqx-kzHMC7VeZkV2MvWHVM5BkkNOqO-CIckgE');">
+</div>
+<!-- Gradientes cósmicos e texturas de luz -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/85 to-transparent pointer-events-none"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest/90 via-surface-container-lowest/60 to-surface-container-lowest/90 pointer-events-none"></div>
+<div class="absolute -top-32 -left-32 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Topo: Marca e Emblema -->
+<div class="relative z-10 flex items-center justify-between">
+<div class="flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high border border-outline-variant/60 flex items-center justify-center text-primary shadow-lg shadow-surface-container-lowest">
+<svg class="w-6 h-6" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z" fill="currentColor"></path>
+</svg>
+</div>
+<div>
+<span class="font-display-hero text-xl font-bold tracking-tight text-on-surface block leading-none">SUPERSHUSHI</span>
+<span class="font-label-caps text-[10px] tracking-[0.24em] text-primary uppercase block mt-1">Painel Omakase Admin</span>
+</div>
+</div>
+<div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container/80 border border-outline-variant/50 backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="font-label-md text-xs text-on-surface-variant font-medium">Gateway Ativo</span>
+</div>
+</div>
+<!-- Centro: Editorial Futurista -->
+<div class="relative z-10 max-w-2xl py-12 lg:py-0">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-surface-container-high/80 border border-outline-variant/60 text-primary-fixed mb-6">
+<span class="material-symbols-outlined text-sm" data-icon="terminal">terminal</span>
+<span class="font-label-caps text-xs">KERNEL OPERACIONAL v4.2</span>
+</div>
+<h1 class="font-display-hero text-4xl sm:text-5xl lg:text-display-hero font-extrabold text-on-surface tracking-tight leading-[1.08] mb-6">
+          GERENCIE SEU <span class="bg-gradient-to-r from-primary-container via-primary to-primary-fixed bg-clip-text text-transparent">UNIVERSO</span> DE SABORES.
+        </h1>
+<p class="font-body-lg text-on-surface-variant max-w-xl leading-relaxed text-base sm:text-lg mb-8">
+          Controle total do cardápio omakase, gastronomia japonesa de precisão milimétrica e orquestração integrada do balcão de entregas em tempo real.
+        </p>
+<!-- Badges de Segurança de Alta Fidelidade -->
+<div class="flex flex-wrap items-center gap-3">
+<div class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-surface-container/90 border border-outline-variant/60 backdrop-blur-md">
+<span class="material-symbols-outlined text-primary" data-icon="lock">lock</span>
+<div class="text-left">
+<span class="block font-label-caps text-[11px] text-on-surface font-semibold">ACESSO CRIPTOGRAFADO</span>
+<span class="block font-label-md text-xs text-on-surface-variant">Protocolo TLS 1.3 Strict</span>
+</div>
+</div>
+<div class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-surface-container/90 border border-outline-variant/60 backdrop-blur-md">
+<span class="material-symbols-outlined text-primary" data-icon="verified_user">verified_user</span>
+<div class="text-left">
+<span class="block font-label-caps text-[11px] text-on-surface font-semibold">PROTEÇÃO OMAKASE</span>
+<span class="block font-label-md text-xs text-on-surface-variant">Autenticação Biométrica / 2FA</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Rodapé Lado Esquerdo -->
+<div class="relative z-10 pt-6 border-t border-outline-variant/30 flex items-center justify-between text-xs text-outline font-label-md">
+<span>© 2025 Supershushi Bar Inc. Todos os direitos reservados.</span>
+<span class="hidden sm:inline">Servidor Seguro Tokyo-East-01</span>
+</div>
+</section>
+<!-- Lado Direito / Área de Autenticação -->
+<section class="lg:w-5/12 flex flex-col justify-between p-6 sm:p-12 lg:p-14 bg-surface-dim relative z-20">
+<!-- Topo: Retorno simples (Back to Main para telas focadas) -->
+<div class="flex items-center justify-between mb-8">
+<a class="inline-flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors text-sm font-label-md group" href="/">
+<span class="material-symbols-outlined transition-transform group-hover:-translate-x-1" data-icon="arrow_back">arrow_back</span>
+<span>Voltar para o Website Público</span>
+</a>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center border border-outline-variant/40 text-on-surface-variant">
+<span class="material-symbols-outlined text-base" data-icon="shield">shield</span>
+</div>
+</div>
+<!-- Cartão Central de Login -->
+<div class="w-full max-w-md mx-auto my-auto py-6">
+<!-- Cabeçalho do Card -->
+<div class="mb-8">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high border border-outline-variant/80 flex items-center justify-center text-primary-container mb-4 shadow-inner">
+<span class="material-symbols-outlined text-2xl" data-icon="admin_panel_settings">admin_panel_settings</span>
+</div>
+<h2 class="font-headline-md text-2xl sm:text-3xl text-on-surface font-bold tracking-tight mb-2">
+            Acesso Administrativo
+          </h2>
+<p class="font-body-md text-on-surface-variant text-sm sm:text-base">
+            Entre com suas credenciais para gerenciar o cardápio e operações.
+          </p>
+</div>
+<!-- Formulário -->
+<form class="space-y-5" onsubmit="event.preventDefault();">
+<!-- E-mail corporativo -->
+<div>
+<label class="block font-label-md text-xs font-semibold text-on-surface mb-2 uppercase tracking-wider" for="admin-email">
+              E-mail Corporativo
+            </label>
+<div class="relative flex items-center rounded-xl bg-surface-container border border-outline-variant/60 focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/20 transition-all">
+<span class="absolute left-4 text-outline flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-xl" data-icon="mail">mail</span>
+</span>
+<input class="w-full bg-transparent pl-12 pr-4 py-3.5 text-on-surface placeholder:text-outline/70 font-body-md text-sm border-0 focus:ring-0 focus:outline-none rounded-xl" id="admin-email" placeholder="gestao@supershushi.bar" required="" type="email" value="chef.curadoria@supershushi.bar"/>
+</div>
+</div>
+<!-- Senha -->
+<div>
+<div class="flex items-center justify-between mb-2">
+<label class="block font-label-md text-xs font-semibold text-on-surface uppercase tracking-wider" for="admin-password">
+                Senha de Acesso
+              </label>
+<a class="font-label-md text-xs text-primary hover:text-primary-fixed transition-colors" href="#">
+                Esqueci minha senha
+              </a>
+</div>
+<div class="relative flex items-center rounded-xl bg-surface-container border border-outline-variant/60 focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/20 transition-all">
+<span class="absolute left-4 text-outline flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-xl" data-icon="key">key</span>
+</span>
+<input class="w-full bg-transparent pl-12 pr-12 py-3.5 text-on-surface placeholder:text-outline/70 font-body-md text-sm border-0 focus:ring-0 focus:outline-none rounded-xl" id="admin-password" placeholder="••••••••••••" required="" type="password" value="OmakaseMaster2025#"/>
+<button aria-label="Alternar visibilidade da senha" class="absolute right-4 text-outline hover:text-on-surface transition-colors focus:outline-none flex items-center" id="toggle-password" type="button">
+<span class="material-symbols-outlined text-xl" data-icon="visibility" id="eye-icon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Opções Adicionais: Manter Conectado -->
+<div class="flex items-center justify-between pt-1">
+<label class="flex items-center gap-3 cursor-pointer group select-none">
+<input checked="" class="w-4 h-4 rounded border-outline-variant/70 bg-surface-container text-primary-container focus:ring-0 focus:ring-offset-0 cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-xs text-on-surface-variant group-hover:text-on-surface transition-colors">
+                Manter conectado por 30 dias
+              </span>
+</label>
+</div>
+<!-- Botão Principal com Gradiente Laranja Energético -->
+<div class="pt-3">
+<button class="w-full h-12 rounded-xl bg-gradient-to-r from-primary-container via-[#ff8833] to-[#ff6600] text-on-primary-container font-headline-sm font-bold text-sm tracking-wide flex items-center justify-center gap-2 shadow-lg shadow-primary-container/25 hover:shadow-primary-container/40 hover:opacity-95 active:scale-[0.99] transition-all duration-150" type="submit">
+<span>ENTRAR NO PAINEL</span>
+<span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</form>
+<!-- Banner de Segurança e Curadoria -->
+<div class="mt-8 p-4 rounded-xl bg-surface-container-high/40 border border-outline-variant/30 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5" data-icon="info">info</span>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+            Área restrita à equipe de curadoria e gestão gastronômica do <strong class="text-on-surface">Supershushi Bar</strong>. Todas as sessões e alterações de cardápio são auditadas criptograficamente.
+          </p>
+</div>
+</div>
+<!-- Rodapé Lado Direito: Atalho na base -->
+<div class="pt-6 border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+<a class="font-label-md text-xs text-outline hover:text-primary transition-colors flex items-center gap-1.5" href="/">
+<span class="material-symbols-outlined text-sm" data-icon="arrow_left">arrow_left</span>
+<span>← Voltar para o Website Público</span>
+</a>
+<div class="flex items-center gap-3 text-xs text-outline font-label-md">
+<a class="hover:text-on-surface transition-colors" href="#">Termos</a>
+<span>•</span>
+<a class="hover:text-on-surface transition-colors" href="#">Privacidade</a>
+<span>•</span>
+<a class="hover:text-on-surface transition-colors" href="#">Suporte Técnico</a>
+</div>
+</div>
+</section>
+</div>
+<!-- Inline Vanilla Script for Micro-interactions (Password toggle & lightweight state) -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleBtn = document.getElementById('toggle-password');
+      const passwordInput = document.getElementById('admin-password');
+      const eyeIcon = document.getElementById('eye-icon');
+
+      if (toggleBtn && passwordInput && eyeIcon) {
+        toggleBtn.addEventListener('click', () => {
+          const isPassword = passwordInput.getAttribute('type') === 'password';
+          passwordInput.setAttribute('type', isPassword ? 'text' : 'password');
+          eyeIcon.textContent = isPassword ? 'visibility_off' : 'visibility';
+          eyeIcon.setAttribute('data-icon', isPassword ? 'visibility_off' : 'visibility');
+        });
+      }
+    });
+  </script>
+</body></html>
